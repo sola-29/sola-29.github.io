@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Creating and Preparing Dataset for Analysis in Stata</title>
+  <meta name="description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Creating and Preparing Dataset for Analysis in Stata" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Creating and Preparing Dataset for Analysis in Stata" />
+  
+  <meta name="twitter:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+<meta name="author" content="Sheriff Olasunkanmi" />
+
+
+<meta name="date" content="2015-02-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="intro.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Creating a Dataset for Analysis in Stata</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About this tutorial</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> The Main Stata Interface</a></li>
+<li class="chapter" data-level="3" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html"><i class="fa fa-check"></i><b>3</b> Creating a Stata Dataset</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#creating-a-coding-schema"><i class="fa fa-check"></i><b>3.1</b> Creating a Coding Schema</a></li>
+<li class="chapter" data-level="3.2" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#translating-our-data-set-with-a-coding-sheet"><i class="fa fa-check"></i><b>3.2</b> Translating our Data set with a coding sheet</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="labeling-values-in-our-dataset.html"><a href="labeling-values-in-our-dataset.html"><i class="fa fa-check"></i><b>4</b> Labeling Values in our Dataset</a></li>
+<li class="chapter" data-level="5" data-path="previewing-our-data-set.html"><a href="previewing-our-data-set.html"><i class="fa fa-check"></i><b>5</b> Previewing our data set</a></li>
+<li class="chapter" data-level="6" data-path="saving-our-data-set.html"><a href="saving-our-data-set.html"><i class="fa fa-check"></i><b>6</b> Saving our data set</a></li>
+<li class="chapter" data-level="7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="summary.html"><a href="summary.html#references"><i class="fa fa-check"></i><b>7.1</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Creating and Preparing Dataset for Analysis in Stata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Creating and Preparing Dataset for Analysis in Stata</h1>
+<p class="author"><em>Sheriff Olasunkanmi</em></p>
+<p class="date"><em>2015-02-22</em></p>
+</div>
+<div id="about-this-tutorial" class="section level1" number="1">
+<h1><span class="header-section-number">Module 1</span> About this tutorial</h1>
+<p>In this tutorial, we will explore how to create and prepare a dataset for statistical analysis in Stata. The tasks we would be doing primarily involve data entry and verification and, despite being somewhat tedious and repetitive, they are essential for ensuring accuracy and fitness of our data for analysis in Stata.</p>
+<p>This tutorial is offered for students taking POSC 3010 Empirical Methods in Political Science at Memorial University of Newfoundland. I am Sheriff Ola, and I’m a graduate assistant for this course. I will be leading you in this and similar tutorials on working with Stata. What we learn in the various modules can be applied when you are completing your final projects for the course. We will be using Stata version 12 for our lessons. This may seem daunting at first but, hopefully, by the end of the tutorial, you will see how Stata can help you do many of the tasks you need to accomplish prior to, and during, data analysis.</p>
+<p>Stata is a powerful statistical software package for analyzing data. As a simple tool, it is designed to perform over 70 percent of the tedious task for you during data analysis. Although Stata is primarily a command-driven program (meaning you must type commands into a console to get it to do what you want it to do), it make accommodations for new users to use GUI focused point and click actions. Stata is used extensively in the field of political science along with packages like SAS and SPSS. For myself, although recently I have been growing fond of R - due primarily to it being free, I’m still helplessly attached to Stata, mainly because it is simple to use and provides an intuitive interface for performing many many many statistical procedures. If you are thinking of a quantitatively focused graduate studies or career, I recommend adding Stata to your quantitative/statistics toolbox.</p>
+<p>This tutorial focuses on using Stata to process and prepare questionnaire data for analysis. If your are interested in a more extensive and accessible introduction to Stata, check out this excellent web resource by <a href="https://data.princeton.edu/stata">Germán Rodríguez</a> at Princeton University. You can also take a look at this resource by <a href="http://fmwww.bc.edu/gstat/docs/StataIntro.pdf">Chris Baum</a> at Boston College. However, if you are looking for a more serious and comprehensive introduction to using Stata for your research, I recommend Alan Acock’s <a href="https://www.amazon.ca/Gentle-Introduction-Stata-Fourth/dp/1597181420">A Gentle Introduction to Stata, 4th Edition</a> which served as the main source of reference for this tutorial.</p>
+<p>This tutorial is part of a series of labs for this course that runs each Tuesday and Friday in the computer lab at the Social Science faculty. As always, I urge every one to attend as what you learn can be helpful to you when completing your final project at the end of the term. The lessons are not offered privately to any student without evidence of a need for special accommodation - often in the form of a medical report and approved by professor Speight. I can be reached at the Graduate Lounge at the Political Science department any weekday from 11am - 1pm.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["StataTutorials.pdf", "StataTutorials.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

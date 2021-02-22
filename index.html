@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sheriff Olasunkanmi</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="form.css" >
+  <script src="form.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@200&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.png" >
+  <!--<link rel="stylesheet" href="form.css" >
+  <script src="form.js"></script>-->
+</head>
+<body>
+
+<a id="button"></a>
+
+<!-- partial:index.partial.html -->
+<header class="fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark"  id="main-nav">
+      <a class="navbar-brand" href="#">Sheriff Ola</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About<span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portofolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="container" id="about">
+  <div class="row align-items-center">
+    <div class="col-md-8 about-content">
+      <p>I have 3+ years of experience assisting in research project implementation and providing technology support for remote learning. I also take an active interest in community service and have helped set up library van projects for two rural communities as a social responsibility strategy of a former employer. 
+	  Beside MLIS, I hold a Master of Science Degree in Forestry from the University of British Columbia where I worked with <a href="https://forestry.ubc.ca/faculty-profile/terry-sunderland/"> Dr. Terry Sunderland</a> in the <a href="https://sunderlandlab.forestry.ubc.ca/">
+Sunderland Lab </a> on a dissertation that explored solutions for disseminating conservation information in high forest zone natural resource-dependent communities. Research-wise, I am interested in the 
+quantitative aspects of information and the quantitative features 
+        and characteristics of scientific literature. I use bibliometric, machine learning, and text mining and analytic techniques to explore social, geographic, and institutional dynamics in scientific 
+        knowledge production and exchange.</p>
+      <hr>
+      <h4>For more on my professional and research background, feel free to check out my detailed &nbsp; 
+		<a href="CV.pdf" class="buttonDownload">Resume</a>.</h4>
+
+    </div>
+    <div class="col-md-4 about-content text-center">
+      <img class="img-fluid" src="data.png" alt="me">
+    </div>
+  </div>
+</div>
+<div class="container" id="portofolio">
+  <h1 class="text-center">Sample Projects</h1>
+  <hr>
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-xs-12">
+      <a href="surveyApp/index.html">
+	  <img class="img-fluid portofolio-item" src="https://i.ibb.co/GkkV8XL/uxdesign.png" alt="uxdesign" border="0"></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <a href="Database/index.html">
+	 <img class="img-fluid portofolio-item" src="https://i.ibb.co/j89ft9w/dbase.png" alt="dbase" border="0"></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <a href="python/index.html">
+	  <img class="img-fluid portofolio-item" src="https://i.ibb.co/QJHsSvg/pythn.png" alt="pythn" border="0"></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+            <a href="webApp/index.html">
+<img class="img-fluid portofolio-item" src="https://i.ibb.co/MN8k6PS/webap.png" alt="webap" border="0"></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+	<a href="metadata/index.html">
+	<img class="img-fluid portofolio-item" src="https://i.ibb.co/ZzVwPFN/metadat.png" alt="metadat" border="0"></a>
+    </div>
+    <div class="col-md-6 col-xs-12">
+	<a href="_book/index.html">
+	<img class="img-fluid portofolio-item" src="https://i.ibb.co/N7Sc31V/tutorial.png" alt="tutorial" border="0"></a>
+    </div>
+  </div>
+</div>
+<div class="container" id="contact">
+  <h1 class="text-center">Contact</h1>
+  <hr>
+  <div class="container">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" >
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
+                        </p>
+                        <p class="email">
+                            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                        </p>
+                        <div class="submit">
+                            <button type="submit" class="button-blue">SUBMIT</button>
+                            <div class="ease"></div>
+                        </div>
+                    </form>
+                    <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                            Error
+                        </h4>
+                        Sorry there was an error sending your form. 
+                    </div>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
+                </div>
+            </div>
+        </div>
+		</div>
+		</div>
+		
+		<br>
+<footer>
+  <div class="container">
+    <h3 class="text-center" style="font-size: 15px">Copyright &copy; 2018. Sheriff Y. Ola</h3>
+    <div class="row justify-content-sm-center align-items-center">
+	<div class="col-md-6 social text-center"><a href="https://www.linkedin.com/in/sola29/"><i class="fab fa-linkedin fa-2x icon" style="color: black"></i></a>
+	<a href="https://medium.com/@sheriff.ola29"><i class="fab fa-medium fa-2x icon" style="color: black"></i></a>
+	<a href="https://twitter.com/SheriffOla9"><i class="fab fa-twitter-square fa-2x icon" style="color: black"></i></a>
+	<a href="https://github.com/Ola291981"><i class="fab fa-github-square fa-2x icon" style="color: black"></i></a>
+    <a href="https://scholar.google.com/citations?hl=en&user=yv-fBKIAAAAJ"><i class="ai ai-google-scholar-square ai-2x icon" style="color: black"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+<script>
+	var btn = $('#button');
+
+	$(window).scroll(function() {
+	if ($(window).scrollTop() > 300) {
+	btn.addClass('show');
+	} else {
+	btn.removeClass('show');
+	}
+	});
+
+	btn.on('click', function(e) {
+	e.preventDefault();
+	$('html, body').animate({scrollTop:0}, '300');
+	});
+</script>
+
+</body>
+</html>

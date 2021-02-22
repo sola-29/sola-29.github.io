@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 4 Labeling Values in our Dataset | Creating and Preparing Dataset for Analysis in Stata</title>
+  <meta name="description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 4 Labeling Values in our Dataset | Creating and Preparing Dataset for Analysis in Stata" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 4 Labeling Values in our Dataset | Creating and Preparing Dataset for Analysis in Stata" />
+  
+  <meta name="twitter:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+<meta name="author" content="Sheriff Olasunkanmi" />
+
+
+<meta name="date" content="2015-02-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="creating-a-stata-dataset.html"/>
+<link rel="next" href="previewing-our-data-set.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Creating a Dataset for Analysis in Stata</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About this tutorial</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> The Main Stata Interface</a></li>
+<li class="chapter" data-level="3" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html"><i class="fa fa-check"></i><b>3</b> Creating a Stata Dataset</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#creating-a-coding-schema"><i class="fa fa-check"></i><b>3.1</b> Creating a Coding Schema</a></li>
+<li class="chapter" data-level="3.2" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#translating-our-data-set-with-a-coding-sheet"><i class="fa fa-check"></i><b>3.2</b> Translating our Data set with a coding sheet</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="labeling-values-in-our-dataset.html"><a href="labeling-values-in-our-dataset.html"><i class="fa fa-check"></i><b>4</b> Labeling Values in our Dataset</a></li>
+<li class="chapter" data-level="5" data-path="previewing-our-data-set.html"><a href="previewing-our-data-set.html"><i class="fa fa-check"></i><b>5</b> Previewing our data set</a></li>
+<li class="chapter" data-level="6" data-path="saving-our-data-set.html"><a href="saving-our-data-set.html"><i class="fa fa-check"></i><b>6</b> Saving our data set</a></li>
+<li class="chapter" data-level="7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="summary.html"><a href="summary.html#references"><i class="fa fa-check"></i><b>7.1</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Creating and Preparing Dataset for Analysis in Stata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="labeling-values-in-our-dataset" class="section level1" number="4">
+<h1><span class="header-section-number">Module 4</span> Labeling Values in our Dataset</h1>
+<p>Although it is customary to use Stata’s Data Editor for defining and applying labels, the Variable manager can be a rather useful option for this task. In this module, we will explore how to label values of data set variables, and we will use the Variable manager to accomplish this. By the end of this module, students should:</p>
+<ul>
+<li>become familiar with basic requirements and or procedures of labeling values of some variables in a data set</li>
+<li>be able to use Stata’s Variable manager feature to label variable values in a data set</li>
+</ul>
+<p>The Variable manager feature can be brought up by clicking the spreadsheet icon on Stata’s toolbar, as shown below:</p>
+<div class="figure">
+<img src="https://i.ibb.co/4t6XbS9/varmgr.png" alt="" />
+<p class="caption">Figure 1.7. Variable manager icon</p>
+</div>
+<p>We will open the Variables Manager and define a value label for one of the variables in our data set, <strong><em>study_level</em></strong> (which describes respondents level of study, i.e either graduate, undergraduate or diploma). In this activity, we will use the Variables Manager to define the value labels. Let’s start.</p>
+<p>In the <strong><em>Variable Properties</em></strong> pane, click on the <strong><em>Manage…</em></strong> button next to the <strong><em>Value label</em></strong> field (see figure 1.8).</p>
+<div class="figure">
+<img src="https://i.ibb.co/R4g73Nj/stdlv.png" alt="" />
+<p class="caption">Figure 1.8. Variable manager showing manage property in the Properties pane</p>
+</div>
+<p>This will open a new dialog box called Manage value labels (again see
+figure 1.9 below)</p>
+<div class="figure">
+<img src="https://i.ibb.co/THXS3MG/vn.png" alt="" />
+<p class="caption">Figure 1.9 Manage Value Labels dialog</p>
+</div>
+<p>Because we have no value labels yet, nothing is listed. Click on <strong><em>Create label</em></strong>, and the Create label dialog box opens as shown in figure 2.0.</p>
+<div class="figure">
+<img src="https://i.ibb.co/hV5xgfs/crtlbl.png" alt="" />
+<p class="caption">Figure 2.0. Create Label dialog</p>
+</div>
+<p>For Label name, type Study. Bear in mind that this is not the name of the
+variable but a sort of sobriquet for the set of labels we will use for the variable. For Value, type <strong><em>1</em></strong>; press on Tab button to go to Label (you can also click inside the Label box if you don’t want to use Tab, and start typing) and type <strong><em>graduate</em></strong>; and then click Add. Next type <strong><em>2</em></strong> under Value; press the Tab button to go to Label and type <strong><em>undergraduate</em></strong> and then click Add. Again, type <strong><em>3</em></strong> under value then Tab to Label for the final time and type <strong><em>diploma</em></strong> then click Add. See figure 2.1 for a screen shot of the results:</p>
+<div class="figure">
+<img src="https://i.ibb.co/H7THHXF/lbl.png" alt="" />
+<p class="caption">Figure 2.1. Create Label dialog output</p>
+</div>
+<p>Figure 2.1 shows the Create Labels dialog box after performing the activities above. Since we have no more values, click on OK to close the Create label dialog box. Doing this adds the label <strong><em>study</em></strong> to the Manage value labels dialog box. Now click on the Close button of the Manage value labels dialog box to
+return to the Variables Manager. In the Variable Properties pane, we can click on the drop-down menu for Value label and select our label of study. Then click on Apply. You will notice that the value label for study_level is now study in the list of variables on the left.</p>
+<p>Now using what we have learned so far, let us define more value labels for our data set:</p>
+<ul>
+<li>click on the <strong><em>Manage…</em></strong> button next to Value label,</li>
+<li>then click on Create label, which opens the Create label dialog box.</li>
+<li>Let us make a label sobriquet of <strong><em>Views</em></strong> that we will apply to <strong><em>tuition_hike</em></strong>. This new label is intended to describe respondents’ views of the new tuition hike introduced by the Newfoundland government.</li>
+<li>For Value, type 1;</li>
+<li>tab to Label and type Very Unfair;</li>
+<li>then click on Add.</li>
+<li>Repeat this step to add the following values and labels for the views value label:</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>values</th>
+<th>Labels</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2</td>
+<td>Fair</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>I’m not sure</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Unfair</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Very Unfair</td>
+</tr>
+</tbody>
+</table>
+<p>Let us repeat these steps, starting by clicking on Create Label, and create value labels named status (fee_status), sex (gender), impacts (effects), and funding (fee_type) with the following values and labels:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Label name</th>
+<th>Value</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>sex</td>
+<td>1</td>
+<td>Male</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>2</td>
+<td>Female</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>3</td>
+<td>Other</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>4</td>
+<td>Prefer not to say</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>status</td>
+<td>1</td>
+<td>canadian/permanent resident</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>2</td>
+<td>international student</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>impacts</td>
+<td>1</td>
+<td>Very affected</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>2</td>
+<td>Affected</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>3</td>
+<td>Not sure</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>4</td>
+<td>Slightly affected</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>5</td>
+<td>Not affected at all</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>funding</td>
+<td>1</td>
+<td>Self-funded</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>2</td>
+<td>Scholarship</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>3</td>
+<td>Prefer not to say</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Once we finish creating the last value label, we then click on Close in the Manage value labels dialog box. This takes us back to the Variables Manager.</li>
+<li>Here we can click on any variable - for example, gender, then click on the drop-down menu next to Value label and select one of the sobriquets we just created, in this case, sex. Clicking on Apply will assign this set of
+value labels to the gender variable. We can repeat this for fee_status by selecting status from the drop-down menu. Similarly, we can select impacts for effects, study for study_level, views for tution_hike and finally, funding for fee_type.</li>
+</ul>
+<p>Finally, let us add a note to our dataset. To do this,</p>
+<ul>
+<li>bring up the Variable manager if it is not already the active window,</li>
+<li>and right-click on any of the variables, for example, id.</li>
+<li>A drop-down menu appears with several useful options including <strong><em>Manage notes for dataset…</em></strong> Click on this option, and we see a dialog box open with an option to add notes.</li>
+<li>Click on Add and then type <strong><em>These data were collected for my term project for POSC 3010 in March of 2015</em></strong>.</li>
+<li>Next, click on Submit and then Close to close the dialog box.</li>
+</ul>
+<p>Dataset notes can be very useful for keeping track of general changes in the dataset. To see how the notes look in the data set, type this command into your Stata Command window: <strong><em>describe</em></strong>. Next, type <strong><em>notes</em></strong>. The output can be seen below:</p>
+<div class="figure">
+<img src="https://i.ibb.co/wc746mH/notes.png" alt="" />
+<p class="caption">Figure 2.2.</p>
+</div>
+<p>Going through a series of dialog boxes can be confusing. Remember however, that if you face any difficulty completing any of these tasks, I am always available to help, both in person and via email (<a href="mailto:syo837@mun.ca" class="email">syo837@mun.ca</a>.)</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="creating-a-stata-dataset.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="previewing-our-data-set.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["StataTutorials.pdf", "StataTutorials.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

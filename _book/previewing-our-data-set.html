@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 5 Previewing our data set | Creating and Preparing Dataset for Analysis in Stata</title>
+  <meta name="description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 5 Previewing our data set | Creating and Preparing Dataset for Analysis in Stata" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 5 Previewing our data set | Creating and Preparing Dataset for Analysis in Stata" />
+  
+  <meta name="twitter:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+<meta name="author" content="Sheriff Olasunkanmi" />
+
+
+<meta name="date" content="2015-02-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="labeling-values-in-our-dataset.html"/>
+<link rel="next" href="saving-our-data-set.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Creating a Dataset for Analysis in Stata</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About this tutorial</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> The Main Stata Interface</a></li>
+<li class="chapter" data-level="3" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html"><i class="fa fa-check"></i><b>3</b> Creating a Stata Dataset</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#creating-a-coding-schema"><i class="fa fa-check"></i><b>3.1</b> Creating a Coding Schema</a></li>
+<li class="chapter" data-level="3.2" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#translating-our-data-set-with-a-coding-sheet"><i class="fa fa-check"></i><b>3.2</b> Translating our Data set with a coding sheet</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="labeling-values-in-our-dataset.html"><a href="labeling-values-in-our-dataset.html"><i class="fa fa-check"></i><b>4</b> Labeling Values in our Dataset</a></li>
+<li class="chapter" data-level="5" data-path="previewing-our-data-set.html"><a href="previewing-our-data-set.html"><i class="fa fa-check"></i><b>5</b> Previewing our data set</a></li>
+<li class="chapter" data-level="6" data-path="saving-our-data-set.html"><a href="saving-our-data-set.html"><i class="fa fa-check"></i><b>6</b> Saving our data set</a></li>
+<li class="chapter" data-level="7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="summary.html"><a href="summary.html#references"><i class="fa fa-check"></i><b>7.1</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Creating and Preparing Dataset for Analysis in Stata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="previewing-our-data-set" class="section level1" number="5">
+<h1><span class="header-section-number">Module 5</span> Previewing our data set</h1>
+<p>In the previous modules, we manually entered our data with the help of the Data Editor in <strong><em>edit</em></strong> mode. Having finished entering our data, we
+can now check our work. To do this, we can use the Data Editor in <strong><em>browse mode</em></strong>. A main reason for using the Data Editor in browse mode is to preview data without changing it. By the end of this module, students:</p>
+<ul>
+<li><p>should become familiar with some of the main functions and features of the Data Editor (browse)</p></li>
+<li><p>be able to use the Data Editor in <strong><em>browse</em></strong> mode to preview data</p></li>
+<li><p>Open the Data Editor (Browse) by going to the Stata toolbar and clicking on the icon with the spreadsheet and search tool pointing up. (see Figure 2.3 below)</p></li>
+</ul>
+<div class="figure">
+<img src="https://i.ibb.co/hgZ8qtH/browse.png" alt="" />
+<p class="caption">Figure 2.3. Data Editor (browse) icon</p>
+</div>
+<ul>
+<li>In the Data Editor window that opens, we can see the numeric data where we did not add value labels - that is, for the <strong><em>id</em></strong> variable - but for all the variables to which we assigned value labels, we now see the value label of each respondent, as shown in figure 2.4.</li>
+</ul>
+<div class="figure">
+<img src="https://i.ibb.co/gwdJ4xZ/labels.png" alt="" />
+<p class="caption">Figure 2.4.</p>
+</div>
+<p>Previewing our data in Data Editor (Browse) mode can be quite helpful. For example, we can see that respondent 15 has an ID of 15, is male, may be a Canadian citizen or permanent resident, is pursuing undergraduate studies which is self-funded yet he sees his studies as least affected by the new tuition hike and thinks the new hike is fair. By seeing it laid out this way, we are always aware of how each variable was coded.</p>
+<p>However, if we would like to see just numeric values, we can use the Data Editor (Edit) to do this by typing into the Stata command window the following command: <strong><em>edit, nolabel</em></strong>*. The results can be seen below in Figure 2.5:</p>
+<div class="figure">
+<img src="https://i.ibb.co/2FvbXcP/edmd.png" alt="" />
+<p class="caption">Figure 2.5.</p>
+</div>
+<p>Similarly, should we decide to preview numeric values using the Data
+Editor (Browse), we can type the <strong><em>browse, nolabel</em></strong> command. The result will be similar to Figure 2.6 below:</p>
+<div class="figure">
+<img src="https://i.ibb.co/hVVNRsK/brmd.png" alt="" />
+<p class="caption">Figure 2.6</p>
+</div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="labeling-values-in-our-dataset.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="saving-our-data-set.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["StataTutorials.pdf", "StataTutorials.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

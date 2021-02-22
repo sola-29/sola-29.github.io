@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BookRecorder</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container"> 
+<section id="fancyTabWidget" class="tabs t-tabs">
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+        
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-desktop"></span><span class="hidden-xs">Introduction</span></a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-drafting-compass"></span><span class="hidden-xs">The Design</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-lightbulb"></span><span class="hidden-xs">Inspiration</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-terminal"></span><span class="hidden-xs">Development</span></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+                         
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-vial"></span><span class="hidden-xs">Testing</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-comment"></span><span class="hidden-xs">Final Remarks</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+        </ul>
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                        	<div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h1>A Basic WYSWYG Book Metadata Editor</h1>
+                                    <p style="font-size: 15px; text-align: center;">A CRUD app to support browser-based metadata editing</p>
+                                    <p style="font-size: 12px; color: green; text-align: center;"><strong>(5 minutes read)</strong></p> 
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;"><br>
+                                    <br>
+                                    <p>Although some librarians use web programs like Google Sheets for storing data on items like books, factors such as steep learning curve or non-familiarity with user interface can make working with such applications difficult. A simple web application for creating tables to store book data and information offers a crucial solution for ensuring faster and more accurate work outcome. 
+                            </p>
+                        <p> For my
+                            <a href="https://ischool.ubc.ca/libr-556/">LIBR 556: Information Systems - Documments II</a> course final project therefore, I sought to build a simple web application that allows information on items like books to be stored in a table form. My main focus, in building the application, was design rather than coding. In other words, I was interested in going beyond mere programming and employing valid design techniques to create a minimalist, user-friendly and interactive product. Although my work was aimed at people working with book metadata such as collections or cataloguing staff, I hoped it could be useful to other users whose daily tasks entail similar activities. Hence I thought it advisable to create a flexible and adaptable product that could accommodate different needs and requirements from different user groups. </p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h2>The Design</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/NVsHHjB/uxhc.png" alt="uxhc" width="500px" height="300px"></p>
+                                    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">The User Experience Honeycomb by Peter Morville. Source: Google</figcaption><br>
+                                    <p>The main design principle for my project was Peter Morville's
+                            <a href="https://semanticstudios.com/user_experience_design/">User Experience Honeycomb</a>. To this end, my focus was on ensuring that the end product would be simple, minimalist and easy-to-use. In other words, users should find the end product <strong>usable</strong>, <strong>useful</strong>, <strong>accessible</strong>, and with <strong>desirable</strong> features and functionalities they could easly implement or learn to use. As such, I used mostly common features like forms, buttons and tables in building the application. I decided to omit features like navigation bars or any form of multimedia since I felt they could be a distraction to users. Nielsen (2004) argues that web features such as navigation bars are primarily intended to support user tasks. However, with respect to my application, there was no need for such support since every tasks was intended to be performed on a single page interface and users wouldn't need to navigate between pages or between different sections of a page to complete specific tasks.</p>.
+
+                                   
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<h2>What Inspired the Design?</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>Overall, two main design techniques were consistent throughout my project: <strong>simplicity</strong> and <strong>ease of use</strong>. Relying on recommendations by Morville (2004), Dillon (2004) and Duarte (2008), I ensured that tasks and other actions to be performed by users would be simple, quick and easy to execute. Attempt to achieve a visual harmony for the design inspired the use of simple yet elegant color pallete and fonts. This was done per the recommendation by Duarte (2008) that using such color and font features help draw and retain user interest in the application.         
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Building the Application</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;"><br>
+
+                                   <p class="center" style="text-align: center;"><img src="https://i.ibb.co/8Nq2tPR/html-css-jv.png" alt="html-css-jv" width="500px" height="300px"></p>
+                                    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">Image Source: Google</figcaption>
+
+                                   <br>
+
+                                    <p>I built the application using <a href="html.txt">HTML</a>, <a href="css.txt">CSS</a> and <a href="js.txt">Javascripts</a> languages. It took the whole of the Winter 2018 Semester to do this. Since I wasn't very versed in any of the above languages prior to starting the project, I relied on course labs and personal learning via
+                            <a href="https://www.w3schools.com/html/">tutorials</a> I found online,
+                            <a href="https://www.coursera.org/specializations/web-design">online moocs</a>, and perhaps the most valuable resource I used,
+                            <a href="https://stackoverflow.com/">stack overflow</a>. Naturally, being a novice, I faced quite a steep challenge. One particular challenge was trying to write a code that would allow the application to be usable on multiple devices/platforms - PC, mobile and tablets. After searching the internet a while, I came across
+                            <a href="https://stackoverflow.com/questions/37063717/make-website-compatible-with-other-devices">an answer</a> on stack overflow that allowed me to do this. Another coding challenge I faced was trying to create a feature that would allow users to send data they input into a form to a table. Again after consulting several materials I found online, I was able to piece together knowledge I'd gathered to write some decent javascript codes that allowed me to do this. The codes are shown below:</p><br>
+                                
+                                        <!--<p class="center" style="text-align: center;"><img src="schema.svg" alt="schema" border="1px"></p>-->
+                            <script src="https://gist.github.com/sheriff29/cbe4129ff3af984143a1d76f39d25940.js"></script><br>
+
+                            <p>The above code allows information a user inputs into a form on the application page to be sent to a table beside the form. A user is able to input information on books such as title, name of author, its price and publisher and then click a 'Submit' button. Doing this sends the information they entered to be displayed as table beside the form</p><br>
+
+
+                            <script src="https://gist.github.com/sheriff29/aaa3f2e117fcd4ffadbe02b412dbd2f8.js"></script><br>
+
+
+                            <p>Code #2 above also allows a user to edit information displayed on the table beside the form. Clicking on the Edit link beside the data sends the information back to the form fields for the user to modify as needed. Afterwards they can send the data back to the table by hitting the Submit button</p><p>A real challenge I faced, however, was attempting to create a feature that allows the table data to be exported as .csv, .xsxl or .pdf files. I felt that the application would be incomplete if all it did was take input data and capture them in table format. I felt it would be very useful to users if they could also output or export the table data as spreadsheet or text files. I'm still trying to string up a decent javascript code to accomplish that</p>
+                                    
+                                  
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Testing the Application</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <br>
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/GWCxTqv/crud1.png" alt="html-css-jv" width="500px" height="300px"></p>
+                                    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">The web application: BookRecorder</figcaption><br>
+
+
+
+                        <p>I used a colleague to test the application and provide valuable feedback I could use to iterate on the design. Some of the main features he identified were simplicity and economy of space. Although he noted that these features were likely to endear the product to most users, he was concerned that some users may find the design too simple for their tastes. I am still working to develop the application further. One of my main preoccupations is trying to set up a working feature that lets the table data be exported as .csv and .xsxl files. As mentioned earlier, I don't think the application would be complete without this feature.</p> 
+
+                       <strong>NB:</strong> The finished product at the time of writing may be found <a href="crud/index.html">here</a>.</p> <br>
+   
+
+
+
+                    </div>
+                </div>
+            </div>
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                                    <h2>Conclusion and Moving Forward</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    
+                                    <p>Working on this project has taught me a valuable lesson about putting usability above aesthetics when designing a product. Although <a href="https://www.nngroup.com/articles/aesthetic-usability-effect/#:~:text=Definition%3A%20The%20aesthetic%2Dusability%20effect,actually%20more%20effective%20or%20efficient."> conventional wisdom</a> states that people see things that look better as more workable or efficient, sometimes I think it is important that aesthetics is sacrificed for usability, especially if it might get in the way of what users wish to accomplish with the application.</p>
+   
+                        <h4>Works Cited</h4>
+                        <ol>
+                            <li>Dillon, A. (2004). Designing useable electronic text (2nd ed.). Boca Raton: CRC Press.</li>
+                            <li>Duarte, N. (2008). Slide:ology: The art and science of creating great presentations. Sebastopol, CA: O’Reilly Media.</li> 
+                            <li>Nielsen, J. (2013). Website reading: It (sometimes) does happen. NN/g Nielsen Norman Group. retrieved from: https://www.nngroup.com/articles/website-reading/#:~:text=Summary%3A%20When%20web%20content%20helps,to%20actually%20reading%20the%20copy.</li>
+                            <li>Moran, K. (2015). The Aesthetic-Usability Effect. NN/g Nielsen Norman Group. retrieved from: https://www.nngroup.com/articles/aesthetic-usability-effect/actually%20more%20effective%20or%20efficient.</li>
+                            <li>Morville, P. (2004). User Experience Design. Semantic Studios. retrieved from: https://semanticstudios.com/user_experience_design</li></ol>                   
+                                  
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>

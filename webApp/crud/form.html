@@ -1,0 +1,44 @@
+<html>
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Country</th>
+    </tr>
+    <tr>
+        <td>John Doe</td>
+        <td>john@gmail.com</td>
+        <td>USA</td>
+    </tr>
+    <tr>
+        <td>Stephen Thomas</td>
+        <td>stephen@gmail.com</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>Natly Oath</td>
+        <td>natly@gmail.com</td>
+        <td>France</td>
+    </tr>
+</table>
+<script>
+function exportTableToCSV(filename) {
+    var csv = [];
+    var rows = document.querySelectorAll("table tr");
+    
+    for (var i = 0; i < rows.length; i++) {
+        var row = [], cols = rows[i].querySelectorAll("td, th");
+        
+        for (var j = 0; j < cols.length; j++) 
+            row.push(cols[j].innerText);
+        
+        csv.push(row.join(","));        
+    }
+
+    // Download CSV file
+    downloadCSV(csv.join("\n"), filename);
+}
+</script>
+<body>
+</body>

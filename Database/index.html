@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ILL-Database</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row1 {
+    display: flex;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+
+/* For 2 image containers (use 25% for four, and 50% for two, etc) */
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row2 {
+    display: flex;
+}
+
+.column2 {
+    flex: 50%;
+    padding: 5px;
+}
+
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container"> 
+<section id="fancyTabWidget" class="tabs t-tabs">
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+        
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-desktop"></span><span class="hidden-xs">Introduction</span></a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-cogs"></span><span class="hidden-xs">Design Process</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-gavel"></span><span class="hidden-xs">Business Rules</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-network-wired"></span><span class="hidden-xs">Entity Relations</span></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+                         
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-database"></span><span class="hidden-xs">The Application</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-comment"></span><span class="hidden-xs">Final Remark</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+        </ul>
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                        	<div class="row">
+                            	
+                                <div class="col-md-12">
+                        			                                 <h1>Improving Wait Times for Interlibrary Lending</h1>
+                                    <p style="font-size: 15px; text-align: center;">A Database Solution for Decentralized Services</h1>
+                                    <p style="font-size: 12px; color: green; text-align: center;"><strong>(5 minutes read)</strong></p> 
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>Interlibrary loan services are crucial to libraries' capacities to meet the growing needs of their stakeholders. As members of interlibrary lending networks, libraries have access to collection pools made up of their combined resources and are therefore able to offer expanded range of materials to their patrons. This can be crucial in settings such as academia where access to large library collection can have important implications for teaching and learning outcomes</p>
+                                    <p>Yet, interlibrary loan systems face a lot of challenges, one of which is delay in delivery of requested items. At some post secondary institutions in BC, for instance, some patrons of faculty and department libraries sometimes experience delays in receiving items they request via interlibrary loan services. One possible reason for such delays could be that interlibrary loan transaction at most such institutions are handled by their main, central libraries. Delegating some services to library branches at department and faculty levels could speed up processing times for requests. My <a href="https://ischool.ubc.ca/libr-554/">LIBR 554: Database Design</a> final project therefore sought to explore a database solution for handling interlibrary loan services at the faculty and department levels. My project used the Allard Law School library at UBC as case study to examine how a database for managing interlibrary loan services at faculty and department levels might be designed and implemented.</p> <p>In doing this, I followed a five (5) step design process described in Coronel and Morris (2016), which entailed carefully examining the existing status and environment of the problem or situation to be solved, and then defining the various constraints, objectives, scope and boundaries of the system to be developed. Using the information and insights gained from this process, I then implemented the logical and phyical designs for a faculty-level interlibrary loan database system. The process I used are described in the succeeding sections. </p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h2>Abstract Design</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/YydwvLn/moscow1.png" alt="moscow1" width="600px" height="300px"></p>
+                                    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">MoSCoW Prioritization Matrix for the abstract design</figcaption><br>
+                                    <p>My project began with data collection - via personal interviews - to obtain up-to-date and accurate information on the perceptions, experiences and attitudes of student patrons and library staff regarding interlibrary loan services. Other sources of information were online resources such as websites detailing various interlibrary loan processes at the institution. On the basis of the information obtained, various needs and objectives of the proposed system were contextualized using the popular
+                            <a href="https://en.wikipedia.org/wiki/MoSCoW_method#:~:text=The%20MoSCoW%20method%20is%20a,MoSCoW%20prioritization%20or%20MoSCoW%20analysis.">MoSCoW Prioritization</a> technique.</p>
+
+
+                                   
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<h2>Establishing Business Rules</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>Next, a series of
+                        <a href="https://en.wikipedia.org/wiki/Business_rule">Business Rules</a> and an <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Entity Relations Model</a> were created to capture the interactions, experiences and processes that would define the new system. This was intended to help provide a thorough understanding of user needs, and how to meet them via the new system's products and services (Coronel & Morris, 2016). The business rules for the new database were defined as follows:
+                        <ol>
+                                <li>A
+                                    <strong>PATRON</strong> may make zero or many
+                                    <strong>REQUEST</strong>, but each
+                                    <strong>REQUEST</strong> must have one and only one
+                                    <strong>PATRON</strong>.</li>
+                                <li>A
+                                    <strong>BOOK</strong> may be checked out in zero or many
+                                    <strong>REQUEST</strong>, but each
+                                    <STRONG>REQUEST</STRONG> must check out one and only one
+                                    <strong>BOOK</strong>.</li>
+                                <li>A
+                                    <strong>JOURNAL_ITEM</strong> may be checked out in zero or many
+                                    <strong>REQUEST</strong>, yet each
+                                    <strong>REQUEST</strong> must check out one and only one
+                                    <strong>JOURNAL_ITEM</strong></li>
+                                <li>A
+                                    <strong>STAFF </strong> member may process zero or many
+                                    <strong>REQUEST</strong>, but each
+                                    <strong>REQUEST </strong>must be processed by one
+                                    <strong>STAFF</strong> member.</li>
+                                <li>A
+                                    <strong>CATALOGUE</strong> may represent one or many
+                                    <strong>BOOK</strong>, but each
+                                    <strong>BOOK</strong> must be represented by one
+                                    <strong>CATALOGUE</strong>.</li>
+                                <li>A
+                                    <strong>CATALOGUE</strong> may represent zero or many
+                                    <strong>JOURNAL_ITEM</strong> but each
+                                    <strong>JOURNAL_ITEM</strong> must be represented by one 
+                                    <strong>CATALOGUE</strong>.</li>
+                        </ol></p>
+                                  
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Entity Relations & Normalization</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/448kF7x/ermodel.png" alt="ermodel" width="450px" height="300px">
+                                    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">Entity Relations Model representing business rules for the new system</figcaption></p><br><br>
+
+                                    <p>The interactions and processes defined in the business rules were used to develop an Entity Relations Model shown above. To eliminate any data duplication and redundancies in the tables created above, I implemented a series of normalization. Coronel & Morris (2016) posit that a Second Normal Form (2NF) occurs when a database table is already in a First Normal Form (1NF) and includes no partial dependencies. In other words, none of the table's attributes are dependent on a portion of the primary key. Similarly, a Third Normal Form (3NF) is reached when a table is already in Second Normal Form (2NF) and contains no transitive dependencies. Following these recommendations, I ensured that all non-key attributes of tables were dependent on their primary keys, and that all tables had single key values with none of them repeating or duplicated. This is depicted in the diagram below:</p><br><br>
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/RBWd51m/normalize.png" alt="normalize" width="450px" height="300px">
+                                    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">Diagram showing normalized tables</figcaption></p><br>
+
+                                
+                                        <!--<p class="center" style="text-align: center;"><img src="schema.svg" alt="schema" border="1px"></p>-->
+                                    
+                                  
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			 <h2>Developing & Testing the Database</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <br>
+
+
+                                    <p>Having completed the logical aspect of the design process, it was now time to bring the database application to life. To do this, I used <a href="https://docs.microsoft.com/en-us/sql/sql-server/sql-server-2012-sp4-release-notes?view=sql-server-2016">Microsoft SQL Server</a> version 12 for Windows Operating System. I used this particular tool/software primarily because it is free, has an intuitive interface and a relatively shallow learning curve . To input the necessary commands for creating the database, I wrote a <a href="OLA_LogicalDesign.sql">script</a> using  Stuctured Query Language (SQL). </p><p>To ascertain how well the new database met the requirements and objectives outlined breviously, I wrote several SQL queries to test for robustness and capacity to handle complex tasks. A few of these queries are illustrated below:</p><br><br>
+
+                        <p><strong>Scenario 1:</strong></p>
+                                    <p style="font-family: Courier New, Courier; font-size: medium;">
+                                        <em>A manager at the library at Allard Law School would like to know the status of interlibrary loan requests for various patrons. Ideally, any infomantion retrieved should include addresses and campuses of patrons and be arranged in descending order.</em> </p>
+                                        <p><strong>User</strong>: Library Manager at Allard Law School Library</p>
+                                        <p><strong>Expected query results</strong>: PATRON FIRST NAME, PATRON lAST NAME, PATRON CAMPUS, PATRON EMAIL, REQUEST STATUS, and REQUEST DUE DATE</p>
+                                        <p><strong>SQL syntax:</strong></p><br>
+                    
+                        <script src="https://gist.github.com/sheriff29/0a6134f4f32aac283ffd3eec2a04aa7d.js"></script><br>
+                    <p style="text-align: left"><strong>Results:</strong></p><br><br>
+                        <p class="center" style="text-align: center;"><img src="https://i.ibb.co/c8xr2WW/query2.png" alt="query2" width="650px" height="300px">
+                            <figcaption style="text-align: center; color: #aaaa7f; font-weight: bold;">#1: Results of SQL queary for testing database</figcaption>
+   
+                            <p>As indicated in the above query, various columns were referenced in two tables: PATRON - given an alias p - and REQUEST - assigned an alias r. For each of the rows in a given table the INNER JOIN clause was used to march it with a row in the other table, thus producing the results above.</p>
+   
+                                <p><strong>Scenario 2:</strong></p>
+                        <p style="font-family: Courier New, Courier; font-size: medium;">
+                            <em>A Library Assistant at the Allard Law School library needs information on book and jounal article authorship and title. She would also like to know about their publication dates and book physical description.</em> </p>
+                        <p>
+                            <strong>User</strong>: Library Assistant at Allard Law School Library</p>
+                        <p>
+                            <strong>Expected query results</strong>: JOURNAL ARTICLE TITLE, JOURNAL ARTICLE AUTHOR, JOURNAL DATE, JOURNAL TITLE, BOOK TITLE, BOOK AUTHOR, BOOK PUBLICATION DATE, BOOK PHYSICAL DECRIPTION</p>
+                        <p>
+                            <strong>SQL syntax:</strong></p><br>
+
+                            <script src="https://gist.github.com/sheriff29/b181866eb99bffd4874adae7fa2a54b6.js"></script><br>
+
+                        
+
+                        <p style="text-align: left">
+                            <strong>Results:</strong></p>
+                        <p class="center" style="text-align: center;"><img src="https://i.ibb.co/hyvXKV4/QUERY0.png" alt="QUERY0" width="650px" height="500px">
+                        <figcaption style="text-align: center; color: #aaaa7f; font-weight: bold;">#2: Results of SQL queary for testing database</figcaption></p>
+                        <p>As shown in the results of the second test scenario, the SQL clause, UNION, was used to combine the results of two SELECT statements from two separate tables - BOOK and JOURNAL_ITEM - into a single result set made up of all the rows affected by the SELECT statements. </p>
+                        <p>From the successful execution of the two test queries therefore, it was clear that the new database was well equipped to handle complex and advanced inter library lending query tasks.</p>
+                                  
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Conclusion and Moving Forward</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    
+                                    <p>A relational database for handling interlibrary lending transactions may entail more complexity and detail than what is depicted in this project. The prudence of decentralizing interlending services, especially in large post secondary institutions, is also a subject of intense debate. Indeed, there are some who argue strongly for decentralizing such systems and feel that their costs can be lowered by automation (Vervliet, 1981). These are quite interesting and important debates, and given my enthusiasm about systems librarianship, I plan to continue developing more skills and knowledge about how database systems and technologies may be designed and implemented to help libraries pull resources together, save cost, and improve effieciency of service delivery.</p>
+                                    <p>I am currently developing a front-end web application to connect to this project and improve its accessibility. I'm also looking into building a viable database product, perhaps for a non-profit organization or a similar entity committed to improving literacy access for marginalized communities.</p>
+                                    <br><br>
+
+
+                                    <h4>Works cited</h4>
+
+                                    <ol>
+                                        <li>Coronel, C., & Morris, S. (2016). Database systems: design, implementation, & management. Nelson Education.</li>
+                                        <li>Vervliet, H. (1981), "Speaking for a Cinderella: unplanned decentralized lending", Interlending Review, Vol. 9 No. 4, pp. 128-130. https://doi.org/10.1108/eb017691</li>
+                                    </ol>                   
+                                  
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>

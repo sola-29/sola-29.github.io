@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="dataRepository">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="Identifier" minOccurs="1"/>
+        <xs:element ref="creator" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="dataDescription"/>
+        <xs:element ref="dateCreated"/>
+        <xs:element ref="datePublished"/>
+        <xs:element ref="dateLastModified"/>
+        <xs:element ref="keywords" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="Language" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="contact" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="producerInstitute" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="geographicCoverage" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="dataCitation" maxOccurs="unbounded" minOccurs="0"/>
+        <xs:element ref="notes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="Identifier">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="termSource" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="creator" type="xs:string"/>
+  <xs:element name="dataDescription" type="xs:string"/>
+  <xs:element name="dateCreated" type="xs:date"/>
+  <xs:element name="datePublished" type="xs:date"/>
+  <xs:element name="dateLastModified" type="xs:date"/>
+  <xs:element name="keywords" type="xs:string"/>
+  <xs:element name="Language" type="xs:NCName"/>
+  <xs:element name="contact" type="xs:string"/>
+  <xs:element name="producerInstitute" type="xs:string"/>
+  <xs:element name="geographicCoverage" type="xs:string"/>
+  <xs:element name="dataCitation">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="termSource" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="notes" type="xs:string"/>
+</xs:schema>

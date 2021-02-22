@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 3 Creating a Stata Dataset | Creating and Preparing Dataset for Analysis in Stata</title>
+  <meta name="description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 3 Creating a Stata Dataset | Creating and Preparing Dataset for Analysis in Stata" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 3 Creating a Stata Dataset | Creating and Preparing Dataset for Analysis in Stata" />
+  
+  <meta name="twitter:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+<meta name="author" content="Sheriff Olasunkanmi" />
+
+
+<meta name="date" content="2015-02-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="labeling-values-in-our-dataset.html"/>
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Creating a Dataset for Analysis in Stata</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About this tutorial</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> The Main Stata Interface</a></li>
+<li class="chapter" data-level="3" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html"><i class="fa fa-check"></i><b>3</b> Creating a Stata Dataset</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#creating-a-coding-schema"><i class="fa fa-check"></i><b>3.1</b> Creating a Coding Schema</a></li>
+<li class="chapter" data-level="3.2" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#translating-our-data-set-with-a-coding-sheet"><i class="fa fa-check"></i><b>3.2</b> Translating our Data set with a coding sheet</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="labeling-values-in-our-dataset.html"><a href="labeling-values-in-our-dataset.html"><i class="fa fa-check"></i><b>4</b> Labeling Values in our Dataset</a></li>
+<li class="chapter" data-level="5" data-path="previewing-our-data-set.html"><a href="previewing-our-data-set.html"><i class="fa fa-check"></i><b>5</b> Previewing our data set</a></li>
+<li class="chapter" data-level="6" data-path="saving-our-data-set.html"><a href="saving-our-data-set.html"><i class="fa fa-check"></i><b>6</b> Saving our data set</a></li>
+<li class="chapter" data-level="7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="summary.html"><a href="summary.html#references"><i class="fa fa-check"></i><b>7.1</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Creating and Preparing Dataset for Analysis in Stata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="creating-a-stata-dataset" class="section level1" number="3">
+<h1><span class="header-section-number">Module 3</span> Creating a Stata Dataset</h1>
+<p>Before you have a dataset, you must first collect data on a topic of interest. In this module, we will begin creating a dataset by looking at how to extract data we’ve collected in a questionnaire into a structure or format that can be understood and interpreted by Stata. Please note, this module does not teach how to create a questionnaire. It rather shows how to get the data you’ve collected in a questionnaire into a dataset for analysis in Stata. By the end of the module, students should:</p>
+<ul>
+<li>become familiar with basic requirements for creating a Stata dataset</li>
+<li>be able to input information from a questionnaire into a grid or table format for use in creating a dataset</li>
+<li>know the best practices for naming and labeling variables in a dataset</li>
+</ul>
+<p>Since most of us would be using what we learn in these modules to complete some of the tasks in our term projects, we will use a case study of a fictitious term project to illustrate what we would be exploring. And, since we will be creating the dataset for this module from a questionnaire, here is a sample questionnaire I created to help illustrate most of the ideas and concepts to be treated. The questionnaire is based on a topic investigating Memorial University students’ perceptions about recent tuition hikes by the Government of Newfoundland:</p>
+<hr />
+<p>Respondent id
+- A number from 1 to infinity</p>
+<p>What is your gender
+- Male
+- Female
+- Other, specify
+- Prefer not to say</p>
+<p>What is your level of study
+- Graduate
+- Undergraduate
+- Diploma</p>
+<p>What is your tuition fee status
+- Canadian/Permanent resident
+- International student</p>
+<p>How would you rate the current tuition hikes
+- Fair
+- Unfair
+- I’m not sure</p>
+<p>How much will the new hikes affect your studies
+- Very much
+- Not at all
+- I’m not sure</p>
+<p>Which of the following is true about you
+- I am a self funded student
+- I have a full or partial scholarship
+- I prefer not to say</p>
+<hr />
+<p>The above questionnaire show questions to be posed to respondents on the topic the study seeks to investigate - perceptions of tuition hike by the Government of Newfoundland among Memorial University students. This questionnaire can be converted to a data set structured in a grid or spreadsheet/table format. Many statistical packages like Stata require data that are set in a grid, like a table, with rows and columns. Each row contains data for an observation (which is often a subject or a participant in your study), and each column contains the measurement of some variable of interest about the observation, such as age</p>
+<p>For some variables, the meaning of the values in the data is obvious. For instance if your variable explore people’s year of birth, then when you see the values, it is clear what they mean. For other variables, the meaning of the values needs to be specified with a value label. There are many questionnaires that explore whether respondents “Strongly agree,” “Agree,” “Disagree,” or “Strongly disagree,” or that ask respondents to answer some question with either a “Yes” or “No.” This sort of data is usually coded as numbers, such as 1 for “Yes” and 2 for “No,” and it can make
+understanding tables of data much easier if we create value labels to be displayed in the output in addition to (or instead of) the numbers.</p>
+<div id="creating-a-coding-schema" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Creating a Coding Schema</h2>
+<p>Software like Stata requires the data we bring into them to be set in a format they understand and can interpret. Doing this means that we must sometimes convert or translate the data from a format that a particular software - in this case Stata - does not recognize to one that it does. In this module we will explore how to take data from our sample questionnaire and create a codebook that can be used in creating a data set that Stata can understand and interpret.</p>
+<p>Looking at the sample questionnaire we developed earlier, it is clear that nearly all the characters are strings. Hence, in order to be able to get the data we collect in the questionnaire into Stata for our analysis, we must find a way to structure the data into a form that Stata can understand and interpret Doing this is called <strong><em>coding</em></strong>, where we assign special numeric or string characters to questions and answers to enable analysis to be done in Stata. In this module we will convert the answers in our questionnaire above into numeric characters. Doing this means that answers such as those of the first question, i.e, about Gender, can be assigned numeric characters such as Male = 1, Female = 2, Other = 3, Not sure = 4. Doing this, we can assign a number for each possible answer, or a response for each of the items in our questionnaire.</p>
+<p>We can also assign short variable names for the variable that will contain the data for each item. A rule of thumb for creation of variable names is that we can assign uppercase and lowercase letters, numbers, and underscore character, but the name should have less than 32 characters and contain no spaces. Below is a sample Codebook I created using information from our questionnaire:</p>
+<hr />
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>ID Number</th>
+<th>Question</th>
+<th>Variable name</th>
+<th>Variable label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Identification number</td>
+<td>id</td>
+<td>record order</td>
+<td>1 - nth</td>
+</tr>
+<tr class="even">
+<td>What is your gender</td>
+<td>gender</td>
+<td>Male, Female, Other, Prefer not to say</td>
+<td>1, 2, 3, 4</td>
+</tr>
+<tr class="odd">
+<td>What is your level of study</td>
+<td>Study_level</td>
+<td>Graduate, Undergraduate, Diploma</td>
+<td>1, 2, 3</td>
+</tr>
+<tr class="even">
+<td>What is your tuition fee status</td>
+<td>fee_status</td>
+<td>Canadian/Permanent, Resident International</td>
+<td>1, 2</td>
+</tr>
+<tr class="odd">
+<td>How would you rate the current tuition hikes</td>
+<td>tuition_hike</td>
+<td>Very Fair, Fair, I’m not sure, Unfair, Very Unfair</td>
+<td>1, 2, 3, 4, 5</td>
+</tr>
+<tr class="even">
+<td>How much will the new hikes affect your studies</td>
+<td>effects</td>
+<td>Very affected, Affected, I’m not sure, Slightly affected, Not affected all,</td>
+<td>1, 2, 3, 4, 5</td>
+</tr>
+<tr class="odd">
+<td>How is your study funded</td>
+<td>fee_type</td>
+<td>I am self-funded, Have scholarship, I prefer not to say</td>
+<td>1, 2, 3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>The codebook above help translate the numeric <strong><em>codes</em></strong> in the data set back into the questions that were asked participants and the answer options they could choose from. Without the codebook, it would be difficult to determine, for instance, that every <strong><em>International Student</em></strong> among our participants, is assigned a <strong><em>2</em></strong> in the data set.</p>
+</div>
+<div id="translating-our-data-set-with-a-coding-sheet" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Translating our Data set with a coding sheet</h2>
+<p>From the sample codebook developed in the previous section, and which defines how questions asked in the questionnaire and answers provided by respondents should be structured or represented in a computer readable format, we prepare a coding sheet that would take the data from its current state in the questionnaire and translate it to a computer readable format to be used for analysis in Stata. In this sense, the coding sheet acts as our translator to convert the dataset in the questionnaire to a format that is recognized and understood by Stata.</p>
+<p>The coding sheet may be created using a spreadsheet application like Microsoft Excel or even a text editor with support for comma delimited files such as <a href="https://notepad-plus-plus.org/downloads/">Notepad++</a>. However, Stata has a special application for data entry known as the Data Editor (see figure 1.2). It provides an interface that is similar to a spreadsheet, but it has some features that are more suited to creating datasets specifically for use in Stata. Figure 1.3 below shows the interface for Stata’s Data Editor:</p>
+<div class="figure">
+<img src="https://i.ibb.co/MncT58j/DEditor.png" alt="" />
+<p class="caption">Figure 1.3. Data Editor</p>
+</div>
+<p>In this module, we will be using Stata’s Data Editor to create a coding sheet from the questionnaire above. The Data Editor may be opened in both Edit and Browse modes. Opening in Edit mode allows the editing of data sets. On the other hand, one can simply browse or preview the data set in the Browse mode. To open the Data Editor in Edit mode, click on the icon on the toolbar that looks like a table or spreadsheet with a pencil pointing downward towards the far left corner (see figure 1.4 below).</p>
+<div class="figure">
+<img src="https://i.ibb.co/jgyYg6s/dedit.png" alt="" />
+<p class="caption">Figure 1.4. Data Editor icon</p>
+</div>
+<p>We can start editing as soon as the Data Editor comes up. Just like other spreadsheets, data may be entered directly into the various columns. Let’s enter a data for a fictitious first respondent who answered the first question as Male, the second as graduate, the third as Canadian, fourth as “I am not sure,” the fifth as “not at all” and the sixth as “I’m on scholarship.” To do this:</p>
+<ul>
+<li>click on the first cell at the top left corner and enter <strong><em>1</em></strong> as the value for our respondent’s id.</li>
+<li>Press the Tab key to move one cell to the right, and enter the
+value for the respondent’s gender, which again is a <strong><em>1</em></strong>.</li>
+<li>Press the Tab key again to move to the next cell on the right and enter <strong><em>1</em></strong> again as value for fee status which he answered as Canadian.</li>
+<li>Make another Tab and in the next cell enter <strong><em>3</em></strong> as value for tuition hike.</li>
+<li>Tab again to the right cell and enter <strong><em>2</em></strong> as value for the effects variable.</li>
+<li>Finally repeat the tabbing process and enter <strong><em>2</em></strong> as value for fee_type which describes him as being on full or partial scholarship.</li>
+</ul>
+<p>The results of the data entry procedure we just completed may be viewed below.</p>
+<div class="figure">
+<img src="https://i.ibb.co/1ZNQs4H/editData.png" alt="" />
+<p class="caption">Figure 1.5.</p>
+</div>
+<p>After you have entered all the values for a specific respondent, you then press the Enter key, which will move the cursor to the next row on the Data Editor (Edit), and then press the Home key, which will move the cursor to the first column of this row. You can proceed to enter the rest of the data. The Tab key is smart, so after you enter the last value for a specific row of data, pressing Tab will move the cursor to the first column of the next row.</p>
+<p>However, before doing this it would be good to enter more informative variable
+names to replace the default names of var1, var2, etc. To change a variable’s name:</p>
+<ul>
+<li>click anywhere in the column for that variable or click on its name in the Variables pane at the top right of the Data Editor, for example, var1.</li>
+<li>then in the Properties pane at the lower right of the Data Editor, change Name from var1 to a specific variable name, in our case, id.</li>
+</ul>
+<p>Remember, the name can be up to 32 characters, but it is standard practice to use short names. Since Stata is case sensitive, it is also best to use lowercase names. By using lowercase names, it will be easy to remember what case to use because the names will all be lowercase. From the Properties pane, we can also change the variable’s label to be “Participant identification” by typing this text in the Label box. After completing these routines for 20 fictitious respondents, our Data Editor (Edit) should look like
+figure 1.6 below:</p>
+<div class="figure">
+<img src="https://i.ibb.co/2FvbXcP/edmd.png" alt="" />
+<p class="caption">figure 1.6. Data Editor showing manually typed data</p>
+</div>
+<p>The above image shows the Data Editor (Edit) with manually entered variables and values from our questionnaire. But it is possible that the data set in its current state may confuse certain users. To redress this problem, it is necessary to create descriptive labels for some values on most of the variables to help with clarity. We do this in the next module</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="labeling-values-in-our-dataset.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["StataTutorials.pdf", "StataTutorials.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

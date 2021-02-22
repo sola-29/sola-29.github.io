@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<project name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\dist.clpprj">
+ <settings>
+  <PM_URL><![CDATA[http://localhost/C:/Users/sheri/Documents/website/Site/port/portofolio/dist]]></PM_URL>
+  <PM_HOME_URL><![CDATA[http://localhost/C:/Users/sheri/Documents/website/Site/port/portofolio/dist]]></PM_HOME_URL>
+  <PM_LIBS><![CDATA[]]></PM_LIBS>
+  <PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION>
+  <PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR>
+  <PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE>
+ </settings>
+ <removed value=";"/>
+ <added value=""/>
+ <lastopfiles>
+  <lastactivefile name=""/>
+ </lastopfiles>
+ <errors version="1.3">
+  <errfile name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\metadata\index.html">
+   <error val="27;137;34;137;2001;1;"/>
+   <error val="59;137;66;137;2001;1;"/>
+   <error val="27;172;31;172;2001;1;"/>
+   <error val="53;172;57;172;2001;1;"/>
+   <error val="27;240;35;240;2001;1;"/>
+   <error val="59;240;67;240;2001;1;"/>
+   <error val="27;265;44;265;2001;1;"/>
+  </errfile>
+  <errfile name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\style.css">
+   <error val="38;8;112;8;2502;1;"/>
+   <error val="27942;8;27964;8;2502;1;"/>
+   <error val="29124;8;29134;8;2502;1;"/>
+   <error val="29134;8;29143;8;2502;1;"/>
+   <error val="35644;8;35671;8;2502;1;"/>
+   <error val="35610;8;35644;8;2502;1;"/>
+   <error val="35762;8;35784;8;2502;1;"/>
+  </errfile>
+  <errfile name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\creating-a-stata-dataset.html">
+   <error val="13;1;25;1;2002;1;"/>
+  </errfile>
+ </errors>
+ <cakedata/>
+ <dplmenupath/>
+ <laravael/>
+ <smartyassings/>
+ <twigtemplate/>
+ <yiidata/>
+ <todoblock>
+  <todofile name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\class.phpmailer.php">
+   <todo pos="10;1165" name="TODO: Write our own &quot;idn_to_ascii&quot; function for PHP &lt;= 5.2."/>
+   <todo pos="9;1165" name="@TODO: Write our own &quot;idn_to_ascii&quot; function for PHP &lt;= 5.2."/>
+   <todo pos="9;1381" name="TODO: If possible, this should be changed to escapeshellarg.  Needs thorough testing."/>
+   <todo pos="18;2354" name="TODO would be nice to use php://temp streams here, but need to wrap for PHP &lt; 5.1"/>
+   <todo pos="17;2354" name="@TODO would be nice to use php://temp streams here, but need to wrap for PHP &lt; 5.1"/>
+  </todofile>
+  <todofile name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\class.phpmailer.php">
+   <todo pos="10;1165" name="TODO: Write our own &quot;idn_to_ascii&quot; function for PHP &lt;= 5.2."/>
+   <todo pos="9;1165" name="@TODO: Write our own &quot;idn_to_ascii&quot; function for PHP &lt;= 5.2."/>
+   <todo pos="9;1381" name="TODO: If possible, this should be changed to escapeshellarg.  Needs thorough testing."/>
+   <todo pos="18;2354" name="TODO would be nice to use php://temp streams here, but need to wrap for PHP &lt; 5.1"/>
+   <todo pos="17;2354" name="@TODO would be nice to use php://temp streams here, but need to wrap for PHP &lt; 5.1"/>
+  </todofile>
+ </todoblock>
+ <dbgurls/>
+ <filescache>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\crud\style.css" crc="1609785408009"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\crud\script.js" crc="1609465252239"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\crud\index.html" crc="1613103718413"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\crud\form.html" crc="1609464304086"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\style.css" crc="1612691595948"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\script.js" crc="1612665984000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\LDAvis_prepared.html" crc="1610792637043"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\js.txt" crc="1609907980762"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\index.html" crc="1613103625385"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\html.txt" crc="1609907556720"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\webApp\css.txt" crc="1609907593720"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\extras\ntlm_sasl_client.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\extras\htmlfilter.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\extras\EasyPeasyICS.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\PHPMailerAutoload.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\get_oauth_token.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\composer.json" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\class.smtp.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\class.pop3.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\class.phpmaileroauthgoogle.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\class.phpmaileroauth.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\phpmailer\phpmailer\class.phpmailer.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\demo\output.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\demo\ocr.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\demo\index.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\demo\fingerprint.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\demo\demo.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\PhraseBuilderInterface.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\PhraseBuilder.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\ImageFileHandler.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\composer.json" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\CaptchaBuilderInterface.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\CaptchaBuilder.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\autoload.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\gregwar\captcha\.travis.yml" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\src\ValidatorsList.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\src\Validators.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\src\ValidatorMap.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\src\FormValidator.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\src\FieldValidatorCollection.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\src\FieldValidator.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\phpunit.xml" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\FormGuide\PHPFormValidator\composer.json" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\composer\installed.json" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\composer\ClassLoader.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\composer\autoload_static.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\composer\autoload_real.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\composer\autoload_psr4.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\composer\autoload_namespaces.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\composer\autoload_classmap.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\vendor\autoload.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\surveyApp\style.css" crc="1612691595948"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\surveyApp\script.js" crc="1612665984000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\surveyApp\index.html" crc="1613969974210"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\src\ReCaptchaValidator.php" crc="1504035616000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\src\index.php" crc="1504035616000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\src\FormHandler.php" crc="1504035616000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\python\style.css" crc="1612691595948"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\python\script.js" crc="1612665984000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\python\LDAvis_prepared.html" crc="1610792637043"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\python\index.html" crc="1613971507360"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\metadata\style.css" crc="1612691595948"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\metadata\script.js" crc="1612665984000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\metadata\index.html" crc="1613972429157"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\Database\style.css" crc="1612691595948"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\Database\script.js" crc="1612665984000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\Database\index.html" crc="1613970782237"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\extras\ntlm_sasl_client.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\extras\htmlfilter.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\extras\EasyPeasyICS.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\PHPMailerAutoload.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\get_oauth_token.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\composer.json" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\class.smtp.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\class.pop3.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\class.phpmaileroauthgoogle.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\class.phpmaileroauth.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\phpmailer\phpmailer\class.phpmailer.php" crc="1503943926000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\demo\output.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\demo\ocr.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\demo\index.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\demo\fingerprint.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\demo\demo.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\PhraseBuilderInterface.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\PhraseBuilder.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\ImageFileHandler.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\composer.json" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\CaptchaBuilderInterface.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\CaptchaBuilder.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\autoload.php" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\gregwar\captcha\.travis.yml" crc="1492614654000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\src\ValidatorsList.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\src\Validators.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\src\ValidatorMap.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\src\FormValidator.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\src\FieldValidatorCollection.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\src\FieldValidator.php" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\phpunit.xml" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\FormGuide\PHPFormValidator\composer.json" crc="1494428458000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\composer\installed.json" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\composer\ClassLoader.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\composer\autoload_static.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\composer\autoload_real.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\composer\autoload_psr4.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\composer\autoload_namespaces.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\composer\autoload_classmap.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\vendor\autoload.php" crc="1504118662000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\src\ReCaptchaValidator.php" crc="1504035616000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\src\index.php" crc="1504035616000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\src\FormHandler.php" crc="1504035616000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\readme.html" crc="1591805628000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\handler.php" crc="1612559759946"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\formpage.html" crc="1591805628000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\form.js" crc="1591805628000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\contact-form-css-template\form.css" crc="1591805628000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\jquery-2.2.3\jquery.min.js" crc="1613451830357"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\header-attrs-2.6\header-attrs.js" crc="1613451830351"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\plugin-sharing.js" crc="1613451830937"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\plugin-search.js" crc="1613451830932"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\plugin-fontsettings.js" crc="1613451830941"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\plugin-clipboard.js" crc="1613451830990"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\plugin-bookdown.js" crc="1613451830944"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\lunr.js" crc="1613451830735"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\jquery.highlight.js" crc="1613451830985"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\clipboard.min.js" crc="1613451830809"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\js\app.min.js" crc="1613451830607"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\style.css" crc="1613451830508"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\plugin-table.css" crc="1613451830527"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\plugin-search.css" crc="1613451830576"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\plugin-highlight.css" crc="1613451830557"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\plugin-fontsettings.css" crc="1613451830580"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\plugin-clipboard.css" crc="1613451830600"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\libs\gitbook-2.6.7\css\plugin-bookdown.css" crc="1613451830531"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\summary.html" crc="1613451832224"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\style.css" crc="1613451832391"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\search_index.json" crc="1613451832505"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\saving-our-data-set.html" crc="1613451832150"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\previewing-our-data-set.html" crc="1613451832046"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\labeling-values-in-our-dataset.html" crc="1613451831986"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\intro.html" crc="1613451831775"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\index.html" crc="1613451831703"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\_book\creating-a-stata-dataset.html" crc="1613453852427"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\style.css" crc="1613945739650"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\script.js" crc="1605896400000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\readme.html" crc="1591805628000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\index.html" crc="1613951442866"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\handler.php" crc="1612559759946"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\form.js" crc="1591805628000"/>
+  <file name="C:\Users\sheri\Documents\website\Site\port\portofolio\dist\form.css" crc="1612566554453"/>
+ </filescache>
+</project>

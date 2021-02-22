@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Classification</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container"> 
+<section id="fancyTabWidget" class="tabs t-tabs">
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+        
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-desktop"></span><span class="hidden-xs">Introduction</span></a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-project-diagram"></span><span class="hidden-xs">Workflow</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-cog fa-spin"></span><span class="hidden-xs">Preprocessing</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-vector-square"></span><span class="hidden-xs">Topic Modeling</span></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+                         
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-list-alt"></span><span class="hidden-xs">Classification</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-comment"></span><span class="hidden-xs">Final Remark</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+        </ul>
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                        	<div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h1>Classifying Topics for Research Outputs Using Non-negative Matrix Factorization</h1>
+                                    <p style="font-size: 15px; text-align: center;">A Machine Learning Project</p>
+                                    <p style="font-size: 12px; color: green; text-align: center;"><strong>(5 minutes read)</strong></p> 
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;"><br>
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/5nrY3D6/masked-wc.jpg" alt="masked-wc" width="600px" height="300px"></p>
+                                    <br>
+                                    <p>Capturing and describing texts of digital contents housed in academic repositories can be challenging. Topic modeling via unsupervised machine learning can offer a solution to such challenges. One way this may be done is through non-negative matrix factorization (or NNMF) which extracts key features from documents via text mining frameworks to generate clusters of individual terms or words that form specific topics or concepts. In so doing, it is able to uncover hidden or latent semantic structures in textual documents.</p>
+                        <p>As final project for
+                            <a href="https://ischool.ubc.ca/libr-559c/">LIBR 599C: Python Programming</a>, one of my favorite courses at SLAIS, I classified over 1000 research papers using non-negative matrix factorization. The objective was to identify latent topics or themes within the various documents. I used the NNMF technique because it is known to generate more accurate classification output than other commonly used classification methods such as Latent Semantic Indexing (LSI) or Latent Dirichlet Allocation (Sarkar, 2016; Muller & Guido, 2015). The steps I used to implement the procedure are described in the succeeding sections</p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h2>Abstract Design</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/HNZq1hs/workflow3.png" alt="workflow3" width="600px" height="300px"></p>
+                                    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">Project implementation workflow adapted from Raschka (2015) </figcaption><br>
+                                    <p>I followed a workflow modified from Rachka (2015) which, as can be seen in the diagram above, involved acquiring the relevant data then cleaning and preprocessing to ensure suitability for analysis. The process also entailed creating a matrix to extract document terms, then applying topic models and finally classifying the generated outputs. The topic modeling was implemented using the following equation: <img src="https://i.ibb.co/vvjnF95/eqtn1.gif" alt="NNMF algorithm" width="" height="18px">, where <strong>Y</strong> and <strong>Z</strong> represent non-negative matrix factors that can be multiplied to approximately reconstruct <strong>X</strong>, thus ensuring that all the matrices are non-negative. This can further be represented as: <img src="https://i.ibb.co/rdpx12g/nnmf.gif" alt="nnmf" border="0">, and this function is incorporated in some of the NNMF modules in the the scikit-learn package used in the project.</p>
+                        <p>I started the project by downloading the necessary data - 1000+ information-related research papers - from
+                            <a href="https://login.webofknowledge.com/error/Error?Error=IPError&PathInfo=%2F&RouterURL=https%3A%2F%2Fwww.webofknowledge.com%2F&Domain=.webofknowledge.com&Src=IP&Alias=WOK5">Web of Science</a>, restricting my search to only papers produced by faculty and similar members at the University of British Columbia, using the following search query:
+                            <div class="quote">
+                                <blockquote style="font-family: Courier New, Courier; font-size: medium; background: #545454; color:#ffffff; text-align: left; width: 700px;">
+                                    TS=(information*  AND literacy*  OR digital*  OR archival*)  AND OG=University of British Columbia
+                                </blockquote></div>
+                        <p>The downloaded data - in .csv format - contained over 60 columns featuring author names, paper titles, abstracts, years of publication and similar labels. Given the state it was in, it was necessary to clean it up a bit to make it suitable for the analysis. This I did using the
+                            <a href="https://pandas.pydata.org/">Pandas</a> library to remove all columns save the title and abstract columns</p>.
+
+                                   
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<h2>The Preprocessing Activities</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>Having completed the basic data cleaning tasks, I then implemented a series of preprocessing tasks to further prep the dataset for modeling. As an important stage in data mining and machine learning processes, data preprocessing is seen as useful for enhancing the quality of data and information to be fed to models that are designed to learn from them (Muller & Guido, 2015). In short, if my model was going to be able to extract relevant topics from the datasets I fed it, then this task needed to be performed. I used the <a href="https://www.nltk.org/api/nltk.html">NLTK</a> library to accomplish this, performing tasks such as:
+                                <ul>
+                                <li>tokenizing sentences into lists of words,</li>
+                                <li>removing punctuations, stopwords, and short words (of length less than 3),</li>
+                                <li>lemmatizing each tokenized word</li>
+                            </ul></p> 
+                            <p>I used the code below to perform these tasks:</p><br>
+
+                            <script src="https://gist.github.com/sheriff29/98ffc4fe0252d22c0e2b59401d2a4f23.js"></script><br>
+
+                            The above code creates the function used to implement the lemantization. This will be used to lemmatize words or strings that are to be tokenized. The tokenization function is shown below, along with others that are intended to remove punctuations, stopwords or words of length exceeding 3:<br><br>
+
+                            <script src="https://gist.github.com/sheriff29/b913d96f27fd5631f9f689e3b88159be.js"></script><br>
+
+                            Prior to implementing the above tasks, I created functions to extract bigrams and trigrams from the texts of the data. Bigrams and Trigrams are two and three words in sentences or texts that frequently occur together. Most of the bigrams and trigrams in my dataset, for example included
+                        <strong>information_system</strong>,
+                        <strong>library_and_information</strong>,
+                        <strong>data_collection</strong>,
+                        <strong>health_information</strong> and several others. I used the
+                        <a href="https://radimrehurek.com/gensim/">Gensim</a> library for this task, specifically, its
+                        <strong>phrases</strong> module to implement these bigrams and trigrams. Following this, I concatenated all the tokenized words into sentences then stored these in a new column I labelled
+                        <strong>processed</strong>. I used the code below to accomplish this:</p>:<br>
+
+                        <script src="https://gist.github.com/sheriff29/6f133bf62f13a9a2123d585682932139.js"></script><br>
+
+                        <p>I also used a wordcloud to visualize the tokenized data, using the following code:</p><br>
+
+                        <script src="https://gist.github.com/sheriff29/e559ab05e6e41708e48302b040effb83.js"></script><br>
+
+                        <p>The generated output can be seen below:</p><br>
+
+
+                        <p class="center" style="text-align: center;"><img src="https://i.ibb.co/5jg5PRG/topic-wordcloud.png" alt="topic-wordcloud" width="600px" height="300px"></p> 
+                        <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">Wordcloud of tokenized data</figcaption>         
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Generating the Topic Model</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                   <br><br>
+
+                                    <p>Having completed the preprocessing tasks, I was now set to commence the topic modeling implementation. Topic modeling normally entail representing each word and term within documents as vector. In python, this can be accomplished using the scikit-learn library, specifically, its
+                        <strong>TfidVectorizer</strong> module. In this project, I followed normal convention and opted to use approximately 1000 words from the dataset for this task. It is normally believed exceeding the 1000-word treshold would entail a lot of computing power (Muller & Guido, 2015). Next, I used the sklearn decomposition module -
+                        <strong>NMF</strong> to create matrix decomposition. In other words, the document terms that were generated via the TfidVectorizer were to be decomposed into multiple matrices. This would result in two sets of matrices: document-topic matrix and term-topic matrix. And by reverse sorting the rows of generated topics in the term-topic matrix, I obtained the top terms for each topic. I accomplished this using the code below:</p><br>
+
+                        <script src="https://gist.github.com/sheriff29/9eb9868674bf2cf9cde1c82432b66b9f.js"></script><br>
+
+                        <p>
+                        As can be decerned in the code above, a function:
+                        <strong>viewTopic</strong> helps visualize top 10 topics and their corresponding terms. As seen in the diagram below,
+                        <strong>Topic # 02</strong> is concerned with model prediction, parameter-based simulations and data prediction.</p><br>
+
+                        <style type="text/css">
+    table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC; 
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+    } 
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+    }
+    .tableizer-table th {
+        background-color: #104E8B; 
+        color: #FFF;
+        font-weight: bold;
+    }
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th></th><th>Topic # 00</th><th>Topic # 01</th><th>Topic # 02</th><th>Topic # 03</th><th>Topic # 04</th><th>Topic # 05</th><th>Topic # 06</th><th>Topic # 07</th><th>Topic # 08</th><th>Topic # 09</th></tr></thead><tbody>
+ <tr><td>0</td><td>health</td><td>conclusion</td><td>model</td><td>child</td><td>behavior</td><td>foraging</td><td>patient</td><td>species</td><td>social</td><td>memory</td></tr>
+ <tr><td>1</td><td>intervention</td><td>youth</td><td>predict</td><td>parent</td><td>data</td><td>rat</td><td>disease</td><td>nest</td><td>group</td><td>spatial</td></tr>
+ <tr><td>2</td><td>participant</td><td>experiment</td><td>modeling</td><td>children</td><td>analysis</td><td>task</td><td>treatment</td><td>habitat</td><td>negative</td><td>access</td></tr>
+ <tr><td>3</td><td>report</td><td>experience</td><td>simulation</td><td>adhd</td><td>result</td><td>food</td><td>patients</td><td>forest</td><td>participant</td><td>error</td></tr>
+ <tr><td>4</td><td>woman</td><td>expect</td><td>parameter</td><td>school</td><td>provide</td><td>animal</td><td>clinical</td><td>fish</td><td>partner</td><td>search</td></tr>
+ <tr><td>5</td><td>physical_activity</td><td>expand</td><td>base</td><td>problem</td><td>different</td><td>lesion</td><td>adherence</td><td>marine</td><td>preference</td><td>recent</td></tr>
+ <tr><td>6</td><td>group</td><td>exist</td><td>price</td><td>behavior</td><td>use</td><td>phase</td><td>therapy</td><td>prey</td><td>benefit</td><td>performance</td></tr>
+ <tr><td>7</td><td>program</td><td>exhibit</td><td>obtain</td><td>family</td><td>change</td><td>injection</td><td>years</td><td>range</td><td>situation</td><td>status</td></tr>
+ <tr><td>8</td><td>include</td><td>exercise</td><td>use</td><td>parental</td><td>study</td><td>sessions</td><td>include</td><td>population</td><td>people</td><td>present</td></tr>
+ <tr><td>9</td><td>practice</td><td>exchange</td><td>prediction</td><td>factor</td><td>method</td><td>spatial</td><td>trial</td><td>movement</td><td>behavior</td><td>statement</td></tr>
+</tbody></table> 
+    <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">Top 10 generated topics and their corresponding terms</figcaption></p><br>
+
+    <p>In order to get a good visualization of the information contained in the generated topic model, I opted to use the python visualization library,
+    <a href="https://pypi.org/project/pyLDAvis/">pyLDAvis</a>. I used the code below to produce the visualization and to save an .html version for a more concise and interactive viewing. The .html version may be found <a href="LDAvis_prepared.html">here</a>. </p> The code I used for the pyLDAvis output can be seen below:</p><br><br>
+    
+    <script src="https://gist.github.com/sheriff29/cbab88ddc717f9136fd8b4f4f1f81d2a.js"></script><br><br>
+
+<p>Here is the visualization</p><br>
+
+<p class="center" style="text-align: center;"><img src="https://i.ibb.co/3mvQttL/pyldavis.png" alt="pyldavis" width="900px" height="600px"></p> 
+<figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">pyLDAvis visualization of generated topics</figcaption>
+
+
+                                
+                                        <!--<p class="center" style="text-align: center;"><img src="schema.svg" alt="schema" border="1px"></p>-->
+                                    
+                                  
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Classifying the Generated Topics</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <br>
+
+
+                         <p>I used the generated topics to classify the research output/dataset. In doing this, I used the top 10 topics from the modeling algorithm implemented earlier. The following python code was used to accomplish this:</p><br><br>
+
+                         <script src="https://gist.github.com/sheriff29/3922a9a7064447302d4419b2e0a52cee.js"></script><br><br>
+
+                         <p>I saved the results of the classification showing top 10 generated topics in a .csv table. The table below shows the results of the classification:</p><br><br>
+
+
+                          <p class="center" style="text-align: center;"><img src="https://i.ibb.co/C2bL9pP/class.png" alt="class" width="700px" height="400px"></p> 
+                          <figcaption style="text-align: center; color: #59554A; font-weight: bold; font-size: 13px">pyLDAvis visualization of generated topics</figcaption> <br><br>
+
+                          <p>
+                            From the table above, we can see that among the generated topics, topic 2 corresponds with the title and abstracts of the papers it was used to classify. As can be seen, they all deal with the issue of mathematical data modeling. Other paper outputs seen in the table show similar pattern. This can thus be concluded that the classification process met its objective.
+                        </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                                    <h2>Conclusion and Moving Forward</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    
+                                    <p>From this project, I have realized that techniques like topic modeling can be important starting points for uncovering deep insights and patterns buried within datasets. Uncovering such insights and patterns present endless possibilities for research and practice. Given my deep interest in using machine learning tools and techniques to facilitate my research work, and the fact that my current knowledge of this procedure is still rudimentary, I plan to develop more knowledge and understanding of this technique and similar ones that focus on clustering and grouping of text documents and analyzing their similarities.</p>
+   
+                        <h4>Works Cited</h4>
+                        <ol>
+                            <li>Muller, A. and Guido, S. (2015). Introduction to machine learning with Python : a guide for data scientists. O'Reilly Media, Inc. Sebastopol, CA</li>
+                            <li>Sarkar, D. (2015). Text Analytics with Python: A Practical Real-World Approach to Gaining Actionable Insights from your Data. Apress. 901 Grayson Street Suite 204 Berkely, CA, United States. ISBN:978-1-4842-2387-1. Pages:385 </li>
+                            <li>Loper, E. and Bird, S. (2002). NLTK: the Natural Language Toolkit. ETMTNLP '02: Proceedings of the ACL-02 Workshop on Effective tools and methodologies for teaching natural language processing and computational linguistics - Volume 1July 2002 Pages 63–70https://doi.org/10.3115/1118108.1118117 </li>
+                            <li>Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011. </li>
+                        </ol>                   
+                                  
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>

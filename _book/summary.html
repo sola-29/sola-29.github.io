@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Module 7 Summary | Creating and Preparing Dataset for Analysis in Stata</title>
+  <meta name="description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Module 7 Summary | Creating and Preparing Dataset for Analysis in Stata" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Module 7 Summary | Creating and Preparing Dataset for Analysis in Stata" />
+  
+  <meta name="twitter:description" content="A tutorial describing a step by step process of creating and preparing a dataset for statistical analysis in stata" />
+  
+
+<meta name="author" content="Sheriff Olasunkanmi" />
+
+
+<meta name="date" content="2015-02-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="saving-our-data-set.html"/>
+
+<script src="libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Creating a Dataset for Analysis in Stata</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> About this tutorial</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> The Main Stata Interface</a></li>
+<li class="chapter" data-level="3" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html"><i class="fa fa-check"></i><b>3</b> Creating a Stata Dataset</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#creating-a-coding-schema"><i class="fa fa-check"></i><b>3.1</b> Creating a Coding Schema</a></li>
+<li class="chapter" data-level="3.2" data-path="creating-a-stata-dataset.html"><a href="creating-a-stata-dataset.html#translating-our-data-set-with-a-coding-sheet"><i class="fa fa-check"></i><b>3.2</b> Translating our Data set with a coding sheet</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="labeling-values-in-our-dataset.html"><a href="labeling-values-in-our-dataset.html"><i class="fa fa-check"></i><b>4</b> Labeling Values in our Dataset</a></li>
+<li class="chapter" data-level="5" data-path="previewing-our-data-set.html"><a href="previewing-our-data-set.html"><i class="fa fa-check"></i><b>5</b> Previewing our data set</a></li>
+<li class="chapter" data-level="6" data-path="saving-our-data-set.html"><a href="saving-our-data-set.html"><i class="fa fa-check"></i><b>6</b> Saving our data set</a></li>
+<li class="chapter" data-level="7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>7</b> Summary</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="summary.html"><a href="summary.html#references"><i class="fa fa-check"></i><b>7.1</b> References</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Creating and Preparing Dataset for Analysis in Stata</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="summary" class="section level1" number="7">
+<h1><span class="header-section-number">Module 7</span> Summary</h1>
+<p>In this tutorial we have covered several topics related to creating datasets with the Stata statistical software package. Specifically,</p>
+<ul>
+<li>We explored how to create a codebook from a questionnaire</li>
+<li>We also examined how to develop a coding schema and create a codesheet for our data</li>
+<li>We have also gone over how to manually input data into a Stata dataset</li>
+<li>Again, we learned how to add variable names and variable labels to our dataset</li>
+<li>Finally, we learned how to save our Stata dataset, and make them backward and forward compatible for use by earlier and later versions of Stata.</li>
+</ul>
+<div id="references" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> References</h2>
+<ol style="list-style-type: decimal">
+<li>Acock, A. C. (2012). A Gentle Introduction to Stata. StataCorp LP.</li>
+<li>Baum, F. C. (2011). Introduction to Stata. Boston College. retrieved from:
+<a href="http://fmwww.bc.edu/gstat/docs/StataIntro.pdf" class="uri">http://fmwww.bc.edu/gstat/docs/StataIntro.pdf</a></li>
+<li>Rodriguez, G. (n.d.). Stata Tutorial. Princeton University. retrieved from:<a href="https://data.princeton.edu/stata/" class="uri">https://data.princeton.edu/stata/</a></li>
+<li>Stata Corporation. (2003). Stata base reference manual. College Station, TX: Stata Corp.</li>
+<li>Torres-Reyna, O. (2007) Getting Starrted in Data Analysis with Stata. Princeton University. retrieved from: <a href="https://www.princeton.edu/~otorres/StataTutorial.pdf" class="uri">https://www.princeton.edu/~otorres/StataTutorial.pdf</a></li>
+</ol>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="saving-our-data-set.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["StataTutorials.pdf", "StataTutorials.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

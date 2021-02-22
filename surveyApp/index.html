@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SurveyConnectR</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row1 {
+    display: flex;
+}
+
+.column {
+    flex: 25%;
+    padding: 5px;
+}
+
+
+/* For 2 image containers (use 25% for four, and 50% for two, etc) */
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row2 {
+    display: flex;
+}
+
+.column2 {
+    flex: 50%;
+    padding: 5px;
+}
+
+
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container"> 
+<section id="fancyTabWidget" class="tabs t-tabs">
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+        
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-desktop"></span><span class="hidden-xs">Introduction</span></a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-cogs"></span><span class="hidden-xs">Design Process</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-podcast"></span><span class="hidden-xs">User Survey</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-brain"></span><span class="hidden-xs">Brainstorming</span></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+                         
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-mobile"></span><span class="hidden-xs">The Application</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-comment"></span><span class="hidden-xs">Final Remark</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+        </ul>
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                        	<div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h1>A Web Application to Connect Survey Researchers with Study Subjects</h1>
+                                    <p style="font-size: 12px; color: green; text-align: center;"><strong>(5 minutes read)</strong></p> 
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>A common technique used by survey researchers in Canadian post-secondary institutons to recruit study participants is convenience sampling in which potential respondents are engaged based on ease of contact or reach. Often, researchers would post stickers and leaflets on buildings or utility poles in hope that potential subjects they wish to recruit for studies may see them and be convinced to participate. Other researchers use academic forums like
+                            <a href="https://www.researchgate.net/">ResearchGate</a> whereas more desperate ones rely on social media like
+                            <a href="https://www.facebook.com/">Facebook</a> or <a href="https://www.reddit.com/">Reddit.</a></p> <p>Yet, despite the many techniques for finding recruits for survey studies, many researchers, especially students with heavy course load, still face difficulty. For one, posting leaflets on buildings or similar infrastructure to attract subjects 
+                            often entail the hassle of <a href="https://vancouver.ca/doing-business/posters-and-signs-on-city-property.aspx">navigating city bylaw requiments</a>. Similarly, social media may reach many potential recruits but, unfotunately, not a lot of people on social platforms may take such posts seriously. A mobile-focused web application to help connect researchers to potential participants could offer an important solution to this problem. Such an application, for one, could reduce the amount of time, energy or resources researchers typically expend in recruiting people to participate in survey studies </p>
+                        <p>Hence, as final project for
+                        <a href="https://ischool.ubc.ca/libr-555/">LIBR 555: Information Systems - Design,</a> one of my favorite courses  at <a href="https://ischool.ubc.ca/">SLAIS</a>, I explored a design solution for a mobile application that could facilitate easy and convenient recruiting of participants for survey (and similar) studies. To do this, I modelled the project on a <a href="https://voltagecontrol.com/blog/5-steps-of-the-design-thinking-process-a-step-by-step-guide/">five (5) step design process </a>. I chose to implement this specific design model for my project because I felt it could offer exciting opportunities for uncovering insights for solutions that directly apply to specific user needs (Berger, 2017).</p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h2>Designing the Process</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/7r65Qp8/flowss.png" alt="flowss" width="450px" height="300px"></p>
+                                    <p>In implementing the Five-Stage Design model, I aimed to create actual experiences that my target users could easily relate to. This meant consulting with several of my potential users, mostly students at UBC, and gathering information about their various experiences on recruiting study participants so that I could uncover useful insights that are petinent to their experiences (Berger, 2017).</p>
+                        <p>The design process I used can be broken into five (5) main steps, namely:
+                        <ul>
+                            <li>Empathize</li>
+                            <li>Define</li>
+                            <li>Ideate</li>
+                            <li>Prototype</li>
+                            <li>Test</li>
+                        </ul></p>
+
+                        <p>I grounded this process on the premise that the end-user must be at the core of all decision making. In other words, through empathizing with them, accomplished via frequent consultation geared towards understanding their needs and preferences, solutions and processes could be unearthed that directly impact their experiences.</p>
+
+
+                                   
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<h2>Empathizing with Prospective Users</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>As a result, my first step was to try and understand the problem - that is, recruiting subjects for survey studies - from the perspective of users. This entailed setting aside any presuppositions I had about study subject recruitment process. To this end, I was lucky to find several student researchers - mostly at UBC - who were eager to share their experiences. Their responses were revealing and helped me re-evaluate many presumptions I had prior to talking to them. Below are some insightful quotes from some of the interviewees:
+                        <br>
+                        
+    
+    <blockquote style="font-family: 'BioRhyme', serif; color: red; font size: 12px">I wish I could recruit study particpants remotely without needing to roam public places searching for them.</p>
+        <figcaption style="color: black">—Anonymous,
+        <cite style="color: black">from interview transcript</cite></figcaption>
+    </blockquote>
+    
+    <blockquote style="font-family: 'BioRhyme', serif; color: red;">I would really like to recruit study subjects remotely, however I am concerned that they won't be the right fit or that I won't be able to connect well with them.</p>
+        <figcaption style="color: black">—Emmaline, MA Anthropology student,
+        <cite style="color: black">from interview transcript</cite></figcaption>
+    </blockquote>
+    
+        <blockquote style="font-family: 'BioRhyme', serif; color: red;">My main concern is privacy. That is, whether any web application is capable of ensuring security of data I collect through it.</p>
+        <figcaption style="color: black">—Johnson, MSc Bioinformatics student,
+        <cite style="color: black">from interview transcript</cite></figcaption>
+     </blockquote>
+    </p>
+                                  
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Making Sense of User Responses</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/n6zz9mC/Empathy-Map.jpg" alt="Empathy-Map" width="450px" height="300px"></a></p><br><br>
+
+                                    <p>My next step was to brainstorm for ideas on how to address these unmet needs. One way I tackled this was to go online and search for information on techniques people are using to solve data collection and networking problems. I also brainstormed for possible solutions by using several of my colleagues as sounding board to bounce ideas off of in hope of gaining viable feedback from them.
+                    <p>Finally, I was able to decide on the most optimal solution: <strong><em>create a state of the art mobile platform with offline functionality that facilitates research networking, and not only enables potential subjects to be recruited for studies but also ensures maximum security of data collected, all at relatively no cost to users</em></strong>.</p><br>
+
+                                
+                                        <!--<p class="center" style="text-align: center;"><img src="schema.svg" alt="schema" border="1px"></p>-->
+                                    
+                                  
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Prototyping & testing the Application</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="https://i.ibb.co/hyk8hv4/flow4.png" alt="flow4" width="450px" height="300px"></p><br><br>
+
+
+                                    <p>The steps to get my product from an idea to a physical, real life application began with creation of paper sketches that underwent several iterations as I tried to come up with the best features to address the challenges I'd uncovered from my interviews. In developing the sketches, I relied on a flow map I'd created earlier outlining possible functionalities for the intended application. Through lots of feedback from my interviewees which led to lots and lots of iterations, I was able to transform from paper sketches to high fidelity wireframes. Some of the key challenges their feedback helped resolve were related to navigation and editing.</p><br><br>
+
+                        <div class="row1">
+                            <div class="column">
+                                <img src="https://i.ibb.co/WkX02g3/Landing-Page.png" alt="Landing-Page" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="https://i.ibb.co/cQ5Rr9q/Login-Page.png" alt="Login-Page" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="https://i.ibb.co/d2fTbTk/Create-Account.png" alt="Create-Account" style="width:100%">
+                            </div>
+                            <div class="column">
+                            <img src="https://i.ibb.co/mTCjXxh/Reset-Password.png" alt="Reset-Password" style="width:100%">
+                        </div>
+                        </div>
+                        <figcaption style="text-align: center; color: #aaaa7f; font-weight: bold; width: 90%">Showing initiation phase of app usage and featuring splash screen and login pages </figcaption>
+                        <br><br>
+                        <p>One of the main principles emphasized in the design is familiarity (Dam & Siang, 2017) - in order to quickly capture user interest and affinity for the application, many of the basic features are modelled on leading and popular applications that users are familiar with. Navigating the splash screen and continuing through the login and account creation screens, users will encounter common actions they normally perform in many of their favorite applications</p><br><br>
+                            <div class="row">
+                            <div class="column">
+                                <img src="https://i.ibb.co/HYV5CGk/Posts.png" alt="Posts" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="https://i.ibb.co/0qYghGt/Profile.png" alt="Profile" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="https://i.ibb.co/Rb06fVJ/Posting-on-profile.png" alt="Posting-on-profile" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="https://i.ibb.co/ggfwWjg/Editing-Posts.png" alt="Editing-Posts" style="width:100%">
+                            </div>
+                            </div>
+                    <figcaption style="text-align: center; color: #aaaa7f; font-weight: bold; width: 90%">Showing common user interactions including browsing and editing posts </figcaption><br><br>
+   <p>Again, upon logging in, a user will be greeted by a page showing posts about research activities - new studies initiated, call for participation in survey studies, posters of studies completed or proposed and many similar posts. Clicking on posts they find interesting takes users to profile pages of study researchers for more details about studies including timeline, what type it is - that is, whether a personal project or dissertation to fulfill degree requirements. More important, users can see what kind of incentives come with participating as study subjects such as cash rewards, phone cards, coupons for food at Starbucks or similar outlets.
+   </p><br><br>
+   
+                            <div class="row">
+                            <div class="column2">
+                                <img src="https://i.ibb.co/w4YMpbR/Joining.png" alt="Joining" style="width:50%">
+                            </div>
+                            <div class="column2">
+                                <img src="https://i.ibb.co/QMFsRF7/Group-posts.png" alt="Group-posts" style="width:50%">
+                            </div>
+                            </div>
+                                <figcaption style="text-align: center; color: #aaaa7f; font-weight: bold; width: 90%">Joining new user groups and having access to exclusive posts </figcaption><br><br>
+   
+                                <p>A user can join as a researcher or study initiator, and upon doing so, would be able to join any number of groups categorized into subject domains such as Anthropology, Sociology, Health Science, Agriculture and Forestry etc. Such registered users would then have access not only to exclusive group posts about research projects by members in their group but also contact information (acquired through explicit permission) of subjects who participated in these studies. This is intended to give new members implementing similar studies and looking for participants to recruit, a ready pool to draw from.</p>
+                                <br></p><br><br>
+
+
+
+
+                                  
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Conclusion and Moving Forward</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    
+                                    <p>The product is still in the prototype phase, and is likely to undergo several iterations before a final version can be rolled out. Until then,</p>
+                                    <ul>
+                                        <li>Testing will continue, and users will have opportunity to test several of the features in order to provide further insights on preferences and pain points </li>
+                                        <li>More features would be added based on user feedback and recommendations</li>
+                                    </ul>
+                                    
+                                    <p>Working on this project has opened my eyes to the endless possibilities offered by the mobile application development domain. I have also become aware of the importance of putting the user ahead in all design decisions as this enables a more vivid view of the problem at hand. Moving forward, I intend to improve on my people skills, particularly in regard to soliciting inputs from propective user communities as this would enable access to valuable feedback and similar forms of knowledge for improving on the design (Chandler & Unger, 2012)</p>
+                                    <br><br>
+
+
+                                    <h4>Works cited</h4>
+                                    <ol>
+                                        <li>Berger, L. (2017). Will Empathy Make You a Better Designer? Mule Design. Retrieved from: https://muledesign.com/2017/08/will-empathy-make-you-a-better-designer</li>
+                                        <li>Dam, R. and Siang T. (2017). Stage 3 in the Design Thinking Process: ideate. Interaction Design Foundation. Retrieved from: https://www.interaction-design.org/literature/article/stage-3-in-the-design-thinking-process-ideate</li>
+                                        <li> Unger, R., & Chandler, C. (2012). A Project Guide to UX Design: For user experience designers in the field or in the making. New Riders.</li>
+                                    </ol>
+                                  
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>metadata</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
+<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container"> 
+<section id="fancyTabWidget" class="tabs t-tabs">
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+        
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-desktop"></span><span class="hidden-xs">Introduction</span></a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-users"></span><span class="hidden-xs">User Domain</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-table"></span><span class="hidden-xs">Specification</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-code"></span><span class="hidden-xs">Schema</span></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+                         
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-stack-overflow"></span><span class="hidden-xs">Sample Records</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab" tabindex="0"><span class="fa fa-comment"></span><span class="hidden-xs">Final Remark</span></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+        </ul>
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                        	<div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h1>A Metatadata Application Profile for Data Repository Resources</h1>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>This work was my final project for IST 681 Metadata, a course offered jointly by the Universities of British Columbia (Canada) and Syracus (United States). My project focused on creating appropriate metadata standards for open source data repository resources in order to improve their discovery, access and retrieval. Data repositories offer an ideal way for researches to publish and share data they create with others. This is essential for ensuring that such data can be preserved and that others can easily find them. Data repositories often do this by archiving submitted data, assigning them a digital object identifier (DOI), and providing a web content that carefully describe each data object including what they are about, how to cite them, or the number of times they are cited or downloaded.</p>
+                                    <p>Despite the proliferation of open source repositories for facilitating data exchange, discovery and reuse, not enough attempts have been made to create core metadata standards to aid in their description. Creating such standard could be important for many reasons, the primary being that it would greatly enhance the finding, selection and retrieval of datasets by users based on their specific topics, needs or interests. A related reason could also be that it would enhanced transparency and trust in scientific knowledge production as other scholars would be able to easily discover and work on datasets submitted by their peers, and by so doing, validate and reproduce their findings and thus extend the pace of scientific discovery by building on top of their colleagues' efforts. One likely use case for such a metadata standard could be that a library - most probably academic or a similar research institution - could include metadata records of such repositories in their catalogs for members - researchers, students and similar users - to find, retrieve and resuse.</p>
+                                    <p>Thus, given the level of interest in research data exchange and resuse, and the emergence of data repositories as important tools for facilitating these activities, implementing core standards for describing the resources of such repositories has become crucial. This project therefore looked at uncovering the most salient metadata elements for data repository resources that can best enhance their discoverability. I begun with a domain analysis of users and use case scenarios that may be found in the next section.</p>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h2>User Domain Analysis</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p class="center" style="text-align: center;"><img src="usecase1.png" alt="usecase1" width="550" height="400"></p>
+                                    <p>Although open source repositories for data exchange attract many users, the main ones may be grouped into three categories: users who contribute data to such repositories, other users who access the published or contributed datasets, and universities, libraries and similar institutions that hosts and or maintains such repositories.</p>
+                                    <p>The creators or contributors of datasets decide on the title, date, astracts or descriptions, format and similar attributes of the dataset whereas user communities often encompass researchers from academia and sectors such as private business, health, government, or non-profits. These entities perform several activities during interaction with datasets on repositories such as searching, downloading or harvesting the datasets, visualizing and in some cases, even modifying the datasets to suit their needs.</p>
+                                    <p>Host institutions or organizations include academic, research, private or government institutions and libraries that create, host and maintain repositories to house contributed datasets. They are often responsible for granting access both to data contributers to submit their data onto the systems and to users to search for and access these datasets. They also provide unique identifiers to submitted objects and create special webpages for hosting contributed datasets. They make rules on how the datasets is to be accessed and used on the repository, and create facilities for users to cite the data they access on the system</p>
+                                    <p>Understanding these various entities and how they interact with open source data repository systems is important for uncovering relevant metadata descriptions or elements that can enhance discoverability of objects.</p>
+
+
+                                   
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<h2>Element Set Specification</h2>
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+                                    <p>The lack of an appropriate and suitable metadata standard for describing data repository resources create an imperative for an application profile that can enhance discoverability and access of objects. To accomplish this, the project drew elements from existing standards such as <a href="https://www.dublincore.org/specifications/dublin-core/dces/"> Dublin Core (DC)</a> and the Categories for the Description of Works of Arts' new version <a href="https://www.getty.edu/research/publications/electronic_publications/cdwa/cdwalite.html"> CDWA Lite</a>. These standards were chosen because they offer important means of describing dataset objects and facilitating their exchange (Zeng & Qin, 2008). In order to identify elements from these standards that are most salient to my project, I evaluated many of the common DC and CDWA Lite elements that are often adopted for data-focused metadata applications. Below is a table providing an overview of selected DC element sets for my application profile, as well as a brief summary of controlled vocabulary used, cardinality and which elements should or should not be mandatory:</p><br><br>
+
+                                    <style type="text/css">
+    table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC; 
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+    } 
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+    }
+    .tableizer-table th {
+        background-color: #104E8B; 
+        color: #FFF;
+        font-weight: bold;
+    }
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>Contact</th><th>&nbsp;</th></tr></thead><tbody>
+ <tr><td>Obligation</td><td>Mandatory if Applicable</td></tr>
+ <tr><td>URI</td><td>http://datasets.org/repos/elements/1.1/contact</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Person, organization or similar entity that may be contacted about the datasets</td></tr>
+ <tr><td>Purpose</td><td>Provides a point of contact information for datasets</td></tr>
+ <tr><td>Note to confuse with</td><td>Publisher,</td></tr>
+ <tr><td>Examples</td><td>North America, Alaska, </td></tr>
+ <tr><td>Additional Information</td><td>May include creator of datasets, a contributing instution or even the publishing authority</td></tr>
+ <tr><td>crosswalk</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Creator</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/creator</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Entity or person  responsible for creation of dataset</td></tr>
+ <tr><td>Purpose</td><td>Indentifies authority or entity responsible for accuracy and timeliness of dataset</td></tr>
+ <tr><td>Not to be confused with</td><td>Publisher or contributor</td></tr>
+ <tr><td>Additional Information</td><td>Maybe an organization, individual, institution or name of a position</td></tr>
+ <tr><td>Examples</td><td><creator>Murphy, J.</creator>;  <creator>Health Canada</creator></td></tr>
+ <tr><td>crosswalk</td><td>dc.creator</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>dataCitation</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://datasets.org/repos/elements/1.1/identifier</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>References creator and or authority responsible for datasets creation</td></tr>
+ <tr><td>Purpose</td><td>Allows acknowledgement of datasets creator(s) by users</td></tr>
+ <tr><td>Not to be confused with</td><td>Annotation</td></tr>
+ <tr><td>Encoding schemes</td><td>May include author name, date of publication, title, publisher, verision or URI</td></tr>
+ <tr><td>crosswalk</td><td>cdwalite.citation</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>dataDescription</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/description</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>A brief account of the dataset including its scope, coverage and objectives</td></tr>
+ <tr><td>Purpose</td><td>Provides adequate explanation dataset to help user search decision making</td></tr>
+ <tr><td>Not to be confused with</td><td>Abstract or preface</td></tr>
+ <tr><td>Additional Information</td><td>Maybe an organization, individual, institution or name of a position</td></tr>
+ <tr><td>crosswalk</td><td>dc.description</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>dateCreated</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/date</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>The date or date and time dataset was created</td></tr>
+ <tr><td>Purpose</td><td>Facilitate searching by providing option for filtering search by date</td></tr>
+ <tr><td>Not to be confused with</td><td>Temporal coverage or the time period covered by dataset</td></tr>
+ <tr><td>Additional Information</td><td>Date Exchange Standard - Date, Time, and Date and Time Standard</td></tr>
+ <tr><td>Examples</td><td><date>2015-05-03</date>;  <date>May 3, 2015</date></td></tr>
+ <tr><td>crosswalk</td><td>dc.date</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>dateLastModified</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/date</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>The date, or date and time the content of the dataset was last changed</td></tr>
+ <tr><td>Purpose</td><td>Facilitate search by focusing on specific dates</td></tr>
+ <tr><td>Not to be confused with</td><td>Temporal coverage or the time period covered by resource</td></tr>
+ <tr><td>Additional Information</td><td>Date Exchange Standard - Date, Time, and Date and Time Standard</td></tr>
+ <tr><td>crosswalk</td><td>dc.date</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>datePublished</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/date</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Publication date of dataset</td></tr>
+ <tr><td>Purpose</td><td>Provide search filtering option for publication date</td></tr>
+ <tr><td>Not to be confused with</td><td>Date created or date last modified</td></tr>
+ <tr><td>Additional Information</td><td>Date Exchange Standard must be used for recoding publication date attributes</td></tr>
+ <tr><td>crosswalk</td><td>dc.date</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Geographic coverage</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory if Applicable</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/coverage</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Information on geographic coverage or spatial extent covered by datasets</td></tr>
+ <tr><td>Purpose</td><td>Provides description on spatial extent or location covered by the dataset</td></tr>
+ <tr><td>Note to confuse with</td><td>Extent i.e information about size of dataset content</td></tr>
+ <tr><td>Examples</td><td>North America, Alaska, </td></tr>
+ <tr><td>Additional Information</td><td>May include single or multiple spatial and temporal coverages, or none</td></tr>
+ <tr><td>crosswalk</td><td>dc.coverage</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Identifier</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/identifier</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Unique code assigned to dataset</td></tr>
+ <tr><td>Purpose</td><td>Unique and non-ambiguous identification for datasets</td></tr>
+ <tr><td>Not to be confused with</td><td>Title, or other official names given to title</td></tr>
+ <tr><td>Encoding schemes</td><td>URI; ISSN, ISBN</td></tr>
+ <tr><td>Examples</td><td>Code or ID or unique number for listed dataset items</td></tr>
+ <tr><td>crosswalk</td><td>dc.identifier</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Keywords</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory if Applicable</td></tr>
+ <tr><td>URI</td><td>http://datasets.org/repos/elements/1.1/keywords</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Key terms that explain major themes or aspects of the dataset</td></tr>
+ <tr><td>Purpose</td><td>Enables searching for datasets based on major themes or keywords</td></tr>
+ <tr><td>Additional information</td><td>Keywords may span several subject areas and may give an indication of the scope</td></tr>
+ <tr><td>Examples</td><td>phytophthora infestans, no poverty, disease resistance</td></tr>
+ <tr><td>crosswalk</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Language</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory if Applicable</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/language</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Language of dataset content</td></tr>
+ <tr><td>Purpose</td><td>Enables searching of dataset based on specific language</td></tr>
+ <tr><td>Additional information</td><td>Some datasets may have metada in more than 1 language</td></tr>
+ <tr><td>Examples</td><td><language>English</language>;   <language> en-CA,</language></td></tr>
+ <tr><td>Encoding schemas</td><td>The following may be used RFC 5646, RFC 4647, IANA Language Subtag Registry</td></tr>
+ <tr><td>crosswalk</td><td>dc.language</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Notes</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory if Applicable</td></tr>
+ <tr><td>URI</td><td>http://datasets.org/repos/elements/1.1/notes</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Extra pertinent information about dataset</td></tr>
+ <tr><td>Purpose</td><td>Provides additional information about datasets content or usage</td></tr>
+ <tr><td>Note to confuse with</td><td>Abstract; summary</td></tr>
+ <tr><td>Examples</td><td>Subtypes of datasets</td></tr>
+ <tr><td>Additional Information</td><td>May describe some aspects of the datasets or provide recommendations for usage</td></tr>
+ <tr><td>crosswalk</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>producerInstitute</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://datasets.org/repos/elements/1.1/producerInstitute</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>Entity or organization with financial or administrative responsibility over datasets</td></tr>
+ <tr><td>Purpose</td><td>Identifies entity or organization responsible for production and or maintenance of datasets</td></tr>
+ <tr><td>Not to be confused with</td><td>Publisher, author</td></tr>
+ <tr><td>Additional information</td><td>This entity  servmaye as additional reposiory where idatasets may be accessed</td></tr>
+ <tr><td>Examples</td><td><producerInstitute>University of British Columbia</producerInstitute></td></tr>
+ <tr><td>crosswalk</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Title</td><td>&nbsp;</td></tr>
+ <tr><td>Obligation</td><td>Mandatory</td></tr>
+ <tr><td>URI</td><td>http://purl.org/dc/elements/1.1/title</td></tr>
+ <tr><td>Repeatable</td><td>Yes</td></tr>
+ <tr><td>Definition</td><td>A name used as access point for dataset</td></tr>
+ <tr><td>Purpose</td><td>Facilitate search and retrieval of dataset; Uniquely identfy dataset</td></tr>
+ <tr><td>Not to be confused with</td><td>File name</td></tr>
+ <tr><td>Additional Information</td><td>Should reflect how users search for the dataset</td></tr>
+ <tr><td>Examples</td><td><title>Replication datasets for conservation agriculture trials in Kenya in 2011</title></td></tr>
+ <tr><td>crosswalk</td><td>dc.title</td></tr>
+</tbody></table><br><br>
+
+
+
+
+<p><strong>NOTE!!:</strong> The above specification table can be accessed as a comma delimited and an Excel spreadsheet on <a href="#">Github</a></p>
+                                  
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Schema Creation</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    <p>Having developed appropriate metadata element sets for my project, I created a schema file that would provide a framework for creating .xml documents based on the element specifications I developed. Generally, creating the schema (.xsd) file entailed establishing type properties that would provide the descriptions of what should be contained within the element sets when an .xml document is created based on these element sets. The various types I used included string (xs:string) and dates (xs:date). An important part of creating the schema was deciding on the <strong>cardinality</strong> of element sets. In other words, the number of times an element could be repeated in the document, and whether they ought to be mandatory or optional. For instance, I reasoned that an element like title may appear only once in a document since dataset objects or resources usually have single titles. However, elements such as keyword> could appear multiple times since there are often more than one keyword for describing datasets. The figure below shows the output of the schema (.xsd) file I created using <a href="https://www.oxygenxml.com/buy_academic_edition.html"></a> OxygenXml Editor (Academic trial version). </p><br>
+
+                                
+                                  <script src="https://gist.github.com/sheriff29/24bc1ebd1b870b39d795120a9ba40074.js"></script>
+                                    
+                                  
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Example Records.</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+
+                                    <p>The generated .xsd schema file was used to create a sample .xml record. As is evident from the the figure below, the document was successfully generated based on the element set properties described in the schema that was created. </p><br><br>
+
+                                    <script src="https://gist.github.com/sheriff29/1fd6b20069a9c5c6b7d796242ea2b8a6.js"></script>
+
+
+                                    <p>The table below shows the output of the .xml record created above</p><br><br>
+
+
+
+
+                <style type="text/css">
+    table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC; 
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+    } 
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+    }
+    .tableizer-table th {
+        background-color: #104E8B; 
+        color: #FFF;
+        font-weight: bold;
+    }
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>Elements</th><th>Values</th></tr></thead><tbody>
+ <tr><td>Title</td><td>Replication Dataset for Community-based NTFP Commercialization Survey</td></tr>
+ <tr><td>Identifier</td><td>doi:10.21223/DSRBEV</td></tr>
+ <tr><td>Creator</td><td>Murphy, J. Yankey</td></tr>
+ <tr><td>dataDescription</td><td>A dataset of responses obtained through a community survey to determine impacts of NTFP commercialization activities on rural poverty</td></tr>
+ <tr><td>dateCreated</td><td>2017-02-09</td></tr>
+ <tr><td>datePublished</td><td>2017-04-21</td></tr>
+ <tr><td>dateLastModified</td><td>2019-01-29</td></tr>
+ <tr><td>Keywords</td><td>Poverty alleviation, Forest products commercialization, Conservation, Forest Policy</td></tr>
+ <tr><td>Language</td><td>en-CA</td></tr>
+ <tr><td>Contact</td><td>M.J. Yankey, Faculty of Renewable Forest Resource, University of Texas, US. 1-800-223654</td></tr>
+ <tr><td>producerInstitute</td><td>University of Texas</td></tr>
+ <tr><td>geographicCoverage</td><td>West and Central Africa</td></tr>
+ <tr><td>dataCitation</td><td>Murphy, J.Y. (2017). Replication Dataset for Community-based NTFP Commercialization Survey. https://doi.org/10.21223/DSRBEV. </td></tr>
+ <tr><td>Notes</td><td>Type: Survey; subtype(s): Rural community livelihood survey</td></tr>
+</tbody></table>
+
+                                  
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-12">
+                        			<h2>Conclusion</h2>
+
+                                    <hr style= "border: none; border-top: 3px double #333;color: #333; overflow: visible; text-align: center;height: 5px; width: 120px;">
+
+                                    
+                                    <p>The importance of data exchange and resuse for research within and outside academia cannot be overstated. In the absence of this phenomenon, research works may not be easily validated or replicated, which could have important repurcussions on the advancement of knowledge. Data repositories have emerged to make sharing and accessing datasets among researchers both easy and convinient. Efforts to improve description of metadata for enhanced repository objects discovery should therefore be a priority among information and research professionals. Completing this project and the (Metadata) course has taught me an important lesson about best practices for creating and describing information resources for enhanced discoverability and access</p><br><br>
+
+
+                                    <h4>Works cited</h4>
+                                    <ol>
+                                        <li>Zeng, M L. and Qin, Jian (2008) Metadata. Neal-Schuman. New York. 9781555706357 / 9781856046558</li>
+                                        <li>Baca, M and Harpring, P. (2016). Categories for the Description of Works of Art - CDWA. The Getty Vocabulary Program. Revised edition. retrieved from: http://www.getty.edu/research/publications/electronic_publications/cdwa/</li>
+                                        <li>The Dublin Core Metadata Initiative. retrieved from: https://dublincore.org/</li>
+                                        <li>Oxygen XML Editor [Software Application]. Academic Edition. retrieved from: https://www.oxygenxml.com/buy_academic_edition.html</li>
+
+                                    </ol>
+                                  
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+</body>
+</html>

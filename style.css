@@ -1,0 +1,303 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255);
+  position: relative;
+}
+
+header {
+  background-color: rgba(0, 0, 0);
+  box-shadow: 5px 0px 10px rgba(0,0,0,.5);
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0);
+}
+
+.navbar a {
+  font-weight: bold;
+  font-size: 16px;
+  transition: 300ms ease;
+  padding: 8px 16px!important;
+}
+
+.active {
+  color: black!important;
+  background: rgba(223, 230, 233,1.0);
+}
+
+.navbar li a {
+  text-transform: uppercase;
+}
+
+.navbar li:hover a{
+  box-shadow: 0px 0px 5px rgba(0,0,0,.3);
+  color: black!important;
+}
+
+.navbar-brand {
+  color: white!important;
+  font-weight: bold;
+  font-size: 30px!important;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+#about {
+  margin-top: 40px;
+  padding: 50px 50px 20px;
+  background-color: rgba(255, 255, 255);
+  text-align: right;
+  color: black;
+}
+
+#about p {
+  font-size: 15px; 
+ font-family: 'BioRhyme', serif;
+}
+
+#about h4 {
+  font-size: 15px; 
+ font-family: 'BioRhyme', serif;;
+}
+
+#about img {
+  border-radius: 50%;
+  max-width: 250px;
+}
+
+#about hr {
+  border: 1px solid black;
+  width: 75%;
+  margin-right: 0;
+}
+
+.about-content {
+  padding: 30px
+}
+
+#portofolio {
+  padding: 80px 30px 10px;
+  background: rgba(255, 255, 255);
+  color: rgba(116, 125, 140,1.0);
+}
+
+#portofolio h1 {
+  margin-bottom: 30px;
+}
+
+#portofolio hr {
+  width: 60%;
+  border: 2px solid rgba(116, 125, 140,1.0);
+  margin-bottom: 30px;
+}
+
+.portofolio-item {
+  padding: 40px 20px;
+}
+
+#contact {
+  padding: 80px 30px 30px;
+  background: rgba(255, 255, 255);
+  color: black;
+}
+
+#contact hr {
+   width: 60%;
+  border: 2px solid black;
+  margin-bottom: 30px; 
+}
+
+/*.form-control {
+  border: none!important;
+  outline: none!important;
+  margin-bottom: 20px;
+  border-radius: 0;
+  background: rgba(60, 99, 130,1.0);
+  color: white!important;
+  box-shadow: none!important;
+  font-size: 24px;
+  border-bottom: 1px solid white!important;
+  padding: 10px 0;
+}
+
+.form-control:focus {
+  background: rgba(60, 99, 130,1.0);
+}
+
+.form-control::placeholder {
+  color: white!important;
+}
+*/
+.contact-item {
+  padding: 30px 50px!important;
+  font-size: 22px;
+}
+
+footer {
+  padding: 45px 20px;
+  background: #FFFFFF;
+  color: black;
+   font-size: 12px;
+   font-family: 'BioRhyme', serif;
+ /* box-shadow: 0px -2px 5px rgba(0,0,0,.3);*/
+}
+
+footer h3 {
+  padding-top: 30px;
+ /* margin-bottom: 30px;*/
+}
+
+.social {
+  font-size: 20px;
+  color: black;
+}
+
+.icon {
+  transition: 300ms ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: #353b48;
+  transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 767px) {
+  #about p, h4 {
+    text-align: center;
+  }
+  
+  #about hr {
+    margin: 30px auto;
+  }
+  
+  .navbar-collapse {
+    margin-top: 5px;
+    border-top: 1px solid white;
+    text-align: center;
+  }
+  
+  .navbar-collapse a{
+    margin: 5px auto;
+    width: 200px;
+  }
+  
+  #about, #portofolio, #contact {
+    padding: 85px 15px 20px;
+  }
+  
+  .portofolio-item {
+  padding: 20px 20px;
+}
+  
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* Go To Top Button */
+#button {
+	display: inline-block;
+	background-color: #FF9800;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s,
+	opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+#button::after {
+	content: "\f077";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
+}
+#button:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+#button:active {
+	background-color: #555;
+}
+#button.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 22px;
+  
+	background-color: #000000;
+	color: white;
+  
+	font-family: sans-serif;
+	text-decoration: none;
+	font-size: 1em;
+	text-align: center;
+	text-indent: 15px;
+	text-decoration: none;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+	text-decoration: none;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+	text-decoration: none;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 15px;
+	height: 5px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 20;
+	height: 7;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
