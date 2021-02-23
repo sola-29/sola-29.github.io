@@ -304,7 +304,7 @@ footer h3 {
 
 /* form */
 
-input[type=text], select, textarea {
+/*input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -333,7 +333,7 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
+*/
 
 
 
