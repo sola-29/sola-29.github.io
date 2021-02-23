@@ -304,7 +304,7 @@ footer h3 {
 
 /* form */
 
-/*input[type=text], select, textarea {
+*input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -315,7 +315,7 @@ footer h3 {
   resize: vertical;
 }
 
-input[type=submit] {
+/*input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
