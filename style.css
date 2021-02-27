@@ -56,11 +56,12 @@ header {
 #about p {
   font-size: 15px; 
  font-family: 'BioRhyme', serif;
+	color: #0f0000;
 }
 
 #about h4 {
   font-size: 15px; 
- font-family: 'BioRhyme', serif;;
+ font-family: 'BioRhyme', serif;
 }
 
 #about img {
