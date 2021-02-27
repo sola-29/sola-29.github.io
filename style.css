@@ -50,13 +50,13 @@ header {
   padding: 50px 50px 20px;
   background-color: rgba(255, 255, 255);
   text-align: left;
-  color: black;
+  
 }
 
 #about p {
   font-size: 15px; 
  font-family: 'BioRhyme', serif;
-	color: #0f0000;
+	color: #000000;
 }
 
 #about h4 {
