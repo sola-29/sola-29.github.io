@@ -69,6 +69,10 @@ header {
   max-width: 250px;
 }
 
+#about a {
+	text-decoration: none;
+}
+
 #about hr {
   border: 1px solid black;
   width: 75%;
